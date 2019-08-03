@@ -1,0 +1,473 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Aug  2 06:07:29 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk3 [get_nets \decoder_inst/mode]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets FT601_CLK_c]
+            243 items scored, 21 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 0.526ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \ft601_comp/ft601_txe_665  (from FT601_CLK_c +)
+   Destination:    FD1P3AX    SP             \ft601_comp/i_tx_state_i0_i0  (to FT601_CLK_c +)
+
+   Delay:                   5.290ns  (30.1% logic, 69.9% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.290ns data_path \ft601_comp/ft601_txe_665 to \ft601_comp/i_tx_state_i0_i0 violates
+      5.000ns delay constraint less
+      0.236ns LCE_S requirement (totaling 4.764ns) by 0.526ns
+
+ Path Details: \ft601_comp/ft601_txe_665 to \ft601_comp/i_tx_state_i0_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \ft601_comp/ft601_txe_665 (from FT601_CLK_c)
+Route        11   e 1.179                                  \ft601_comp/ft601_txe
+LUT4        ---     0.408              A to Z              \ft601_comp/i1_3_lut_rep_36_4_lut
+Route         5   e 0.981                                  \ft601_comp/n3204
+LUT4        ---     0.408              C to Z              \ft601_comp/i1_3_lut_adj_109
+Route         1   e 0.660                                  \ft601_comp/n69
+LUT4        ---     0.408              A to Z              \ft601_comp/n69_bdd_4_lut
+Route         3   e 0.879                                  \ft601_comp/FT601_CLK_c_enable_15
+                  --------
+                    5.290  (30.1% logic, 69.9% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 0.526ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \ft601_comp/ft601_txe_665  (from FT601_CLK_c +)
+   Destination:    FD1P3AX    SP             \ft601_comp/i_tx_state_i0_i2  (to FT601_CLK_c +)
+
+   Delay:                   5.290ns  (30.1% logic, 69.9% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.290ns data_path \ft601_comp/ft601_txe_665 to \ft601_comp/i_tx_state_i0_i2 violates
+      5.000ns delay constraint less
+      0.236ns LCE_S requirement (totaling 4.764ns) by 0.526ns
+
+ Path Details: \ft601_comp/ft601_txe_665 to \ft601_comp/i_tx_state_i0_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \ft601_comp/ft601_txe_665 (from FT601_CLK_c)
+Route        11   e 1.179                                  \ft601_comp/ft601_txe
+LUT4        ---     0.408              A to Z              \ft601_comp/i1_3_lut_rep_36_4_lut
+Route         5   e 0.981                                  \ft601_comp/n3204
+LUT4        ---     0.408              C to Z              \ft601_comp/i1_3_lut_adj_109
+Route         1   e 0.660                                  \ft601_comp/n69
+LUT4        ---     0.408              A to Z              \ft601_comp/n69_bdd_4_lut
+Route         3   e 0.879                                  \ft601_comp/FT601_CLK_c_enable_15
+                  --------
+                    5.290  (30.1% logic, 69.9% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 0.526ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \ft601_comp/ft601_txe_665  (from FT601_CLK_c +)
+   Destination:    FD1P3AX    SP             \ft601_comp/i_tx_state_i0_i1  (to FT601_CLK_c +)
+
+   Delay:                   5.290ns  (30.1% logic, 69.9% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.290ns data_path \ft601_comp/ft601_txe_665 to \ft601_comp/i_tx_state_i0_i1 violates
+      5.000ns delay constraint less
+      0.236ns LCE_S requirement (totaling 4.764ns) by 0.526ns
+
+ Path Details: \ft601_comp/ft601_txe_665 to \ft601_comp/i_tx_state_i0_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \ft601_comp/ft601_txe_665 (from FT601_CLK_c)
+Route        11   e 1.179                                  \ft601_comp/ft601_txe
+LUT4        ---     0.408              A to Z              \ft601_comp/i1_3_lut_rep_36_4_lut
+Route         5   e 0.981                                  \ft601_comp/n3204
+LUT4        ---     0.408              C to Z              \ft601_comp/i1_3_lut_adj_109
+Route         1   e 0.660                                  \ft601_comp/n69
+LUT4        ---     0.408              A to Z              \ft601_comp/n69_bdd_4_lut
+Route         3   e 0.879                                  \ft601_comp/FT601_CLK_c_enable_15
+                  --------
+                    5.290  (30.1% logic, 69.9% route), 4 logic levels.
+
+Warning: 5.526 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets sclk]
+            47 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 1.272ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             \prng_inst/sr_i24  (from sclk +)
+   Destination:    FD1S3JX    D              \prng_inst/sr_i31  (to sclk +)
+
+   Delay:                   3.595ns  (53.9% logic, 46.1% route), 6 logic levels.
+
+ Constraint Details:
+
+      3.595ns data_path \prng_inst/sr_i24 to \prng_inst/sr_i31 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 1.272ns
+
+ Path Details: \prng_inst/sr_i24 to \prng_inst/sr_i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \prng_inst/sr_i24 (from sclk)
+Route         3   e 0.919                                  FT601_DATA_c_0
+A1_TO_FCO   ---     0.684           A[2] to COUT           \prng_inst/add_389_1
+Route         1   e 0.020                                  \prng_inst/n2686
+FCI_TO_FCO  ---     0.130            CIN to COUT           \prng_inst/add_389_3
+Route         1   e 0.020                                  \prng_inst/n2687
+FCI_TO_FCO  ---     0.130            CIN to COUT           \prng_inst/add_389_5
+Route         1   e 0.020                                  \prng_inst/n2688
+FCI_TO_FCO  ---     0.130            CIN to COUT           \prng_inst/add_389_7
+Route         1   e 0.020                                  \prng_inst/n2689
+FCI_TO_F    ---     0.495            CIN to S[2]           \prng_inst/add_389_9
+Route         1   e 0.660                                  \prng_inst/n7
+                  --------
+                    3.595  (53.9% logic, 46.1% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 1.422ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \prng_inst/sr_i26  (from sclk +)
+   Destination:    FD1S3JX    D              \prng_inst/sr_i31  (to sclk +)
+
+   Delay:                   3.445ns  (52.4% logic, 47.6% route), 5 logic levels.
+
+ Constraint Details:
+
+      3.445ns data_path \prng_inst/sr_i26 to \prng_inst/sr_i31 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 1.422ns
+
+ Path Details: \prng_inst/sr_i26 to \prng_inst/sr_i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \prng_inst/sr_i26 (from sclk)
+Route         3   e 0.919                                  FT601_DATA_c_2
+A1_TO_FCO   ---     0.684           A[2] to COUT           \prng_inst/add_389_3
+Route         1   e 0.020                                  \prng_inst/n2687
+FCI_TO_FCO  ---     0.130            CIN to COUT           \prng_inst/add_389_5
+Route         1   e 0.020                                  \prng_inst/n2688
+FCI_TO_FCO  ---     0.130            CIN to COUT           \prng_inst/add_389_7
+Route         1   e 0.020                                  \prng_inst/n2689
+FCI_TO_F    ---     0.495            CIN to S[2]           \prng_inst/add_389_9
+Route         1   e 0.660                                  \prng_inst/n7
+                  --------
+                    3.445  (52.4% logic, 47.6% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 1.422ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             \prng_inst/sr_i24  (from sclk +)
+   Destination:    FD1S3JX    D              \prng_inst/sr_i29  (to sclk +)
+
+   Delay:                   3.445ns  (52.4% logic, 47.6% route), 5 logic levels.
+
+ Constraint Details:
+
+      3.445ns data_path \prng_inst/sr_i24 to \prng_inst/sr_i29 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 1.422ns
+
+ Path Details: \prng_inst/sr_i24 to \prng_inst/sr_i29
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \prng_inst/sr_i24 (from sclk)
+Route         3   e 0.919                                  FT601_DATA_c_0
+A1_TO_FCO   ---     0.684           A[2] to COUT           \prng_inst/add_389_1
+Route         1   e 0.020                                  \prng_inst/n2686
+FCI_TO_FCO  ---     0.130            CIN to COUT           \prng_inst/add_389_3
+Route         1   e 0.020                                  \prng_inst/n2687
+FCI_TO_FCO  ---     0.130            CIN to COUT           \prng_inst/add_389_5
+Route         1   e 0.020                                  \prng_inst/n2688
+FCI_TO_F    ---     0.495            CIN to S[2]           \prng_inst/add_389_7
+Route         1   e 0.660                                  \prng_inst/n9
+                  --------
+                    3.445  (52.4% logic, 47.6% route), 5 logic levels.
+
+Report: 3.728 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets \deser_inst/sclk_buf]
+            246 items scored, 26 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 1.816ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \deser_inst/lnk_trnd_buf_i0_i0  (from \deser_inst/sclk_buf +)
+   Destination:    FD1P3AX    D              \deser_inst/bit_slip_67  (to \deser_inst/sclk_buf +)
+
+   Delay:                   6.683ns  (29.9% logic, 70.1% route), 5 logic levels.
+
+ Constraint Details:
+
+      6.683ns data_path \deser_inst/lnk_trnd_buf_i0_i0 to \deser_inst/bit_slip_67 violates
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 1.816ns
+
+ Path Details: \deser_inst/lnk_trnd_buf_i0_i0 to \deser_inst/bit_slip_67
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \deser_inst/lnk_trnd_buf_i0_i0 (from \deser_inst/sclk_buf)
+Route         3   e 0.919                                  \deser_inst/lnk_trnd_buf[0]
+LUT4        ---     0.408              A to Z              \deser_inst/i3_4_lut_rep_41
+Route         8   e 1.075                                  n3209
+LUT4        ---     0.408              B to Z              \deser_inst/i2379_2_lut_rep_38
+Route         7   e 1.049                                  \deser_inst/n3206
+LUT4        ---     0.408              D to Z              \deser_inst/i7_4_lut
+Route         5   e 0.981                                  \deser_inst/sclk_buf_enable_26
+LUT4        ---     0.408              B to Z              \deser_inst/i1_2_lut_adj_117
+Route         1   e 0.660                                  \deser_inst/n2942
+                  --------
+                    6.683  (29.9% logic, 70.1% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 1.816ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \deser_inst/lnk_trnd_buf_i0_i2  (from \deser_inst/sclk_buf +)
+   Destination:    FD1P3AX    D              \deser_inst/bit_slip_67  (to \deser_inst/sclk_buf +)
+
+   Delay:                   6.683ns  (29.9% logic, 70.1% route), 5 logic levels.
+
+ Constraint Details:
+
+      6.683ns data_path \deser_inst/lnk_trnd_buf_i0_i2 to \deser_inst/bit_slip_67 violates
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 1.816ns
+
+ Path Details: \deser_inst/lnk_trnd_buf_i0_i2 to \deser_inst/bit_slip_67
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \deser_inst/lnk_trnd_buf_i0_i2 (from \deser_inst/sclk_buf)
+Route         3   e 0.919                                  \deser_inst/lnk_trnd_buf[2]
+LUT4        ---     0.408              C to Z              \deser_inst/i3_4_lut_rep_41
+Route         8   e 1.075                                  n3209
+LUT4        ---     0.408              B to Z              \deser_inst/i2379_2_lut_rep_38
+Route         7   e 1.049                                  \deser_inst/n3206
+LUT4        ---     0.408              D to Z              \deser_inst/i7_4_lut
+Route         5   e 0.981                                  \deser_inst/sclk_buf_enable_26
+LUT4        ---     0.408              B to Z              \deser_inst/i1_2_lut_adj_117
+Route         1   e 0.660                                  \deser_inst/n2942
+                  --------
+                    6.683  (29.9% logic, 70.1% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 1.816ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \deser_inst/lnk_trnd_buf_i0_i1  (from \deser_inst/sclk_buf +)
+   Destination:    FD1P3AX    D              \deser_inst/bit_slip_67  (to \deser_inst/sclk_buf +)
+
+   Delay:                   6.683ns  (29.9% logic, 70.1% route), 5 logic levels.
+
+ Constraint Details:
+
+      6.683ns data_path \deser_inst/lnk_trnd_buf_i0_i1 to \deser_inst/bit_slip_67 violates
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 1.816ns
+
+ Path Details: \deser_inst/lnk_trnd_buf_i0_i1 to \deser_inst/bit_slip_67
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \deser_inst/lnk_trnd_buf_i0_i1 (from \deser_inst/sclk_buf)
+Route         3   e 0.919                                  \deser_inst/lnk_trnd_buf[1]
+LUT4        ---     0.408              D to Z              \deser_inst/i3_4_lut_rep_41
+Route         8   e 1.075                                  n3209
+LUT4        ---     0.408              B to Z              \deser_inst/i2379_2_lut_rep_38
+Route         7   e 1.049                                  \deser_inst/n3206
+LUT4        ---     0.408              D to Z              \deser_inst/i7_4_lut
+Route         5   e 0.981                                  \deser_inst/sclk_buf_enable_26
+LUT4        ---     0.408              B to Z              \deser_inst/i1_2_lut_adj_117
+Route         1   e 0.660                                  \deser_inst/n2942
+                  --------
+                    6.683  (29.9% logic, 70.1% route), 5 logic levels.
+
+Warning: 6.816 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets \decoder_inst/mode]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets FT601_CLK_c]             |     5.000 ns|     5.526 ns|     4 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets sclk]                    |     5.000 ns|     3.728 ns|     6  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets \deser_inst/sclk_buf]    |     5.000 ns|     6.816 ns|     5 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\deser_inst/sclk_buf_enable_26          |       5|      24|     51.06%
+                                        |        |        |
+\deser_inst/n3206                       |       7|      20|     42.55%
+                                        |        |        |
+n3209                                   |       8|      20|     42.55%
+                                        |        |        |
+\ft601_comp/FT601_CLK_c_enable_15       |       3|      18|     38.30%
+                                        |        |        |
+\deser_inst/n2942                       |       1|      10|     21.28%
+                                        |        |        |
+\ft601_comp/n69                         |       1|       9|     19.15%
+                                        |        |        |
+\ft601_comp/n2436                       |       1|       9|     19.15%
+                                        |        |        |
+\ft601_comp/n3204                       |       5|       9|     19.15%
+                                        |        |        |
+\ft601_comp/ft601_txe                   |      11|       7|     14.89%
+                                        |        |        |
+\ft601_comp/i_rd_en                     |       4|       6|     12.77%
+                                        |        |        |
+\ft601_comp/n3208                       |       2|       6|     12.77%
+                                        |        |        |
+\deser_inst/lnk_trnd_buf[0]             |       3|       5|     10.64%
+                                        |        |        |
+\deser_inst/lnk_trnd_buf[1]             |       3|       5|     10.64%
+                                        |        |        |
+\deser_inst/lnk_trnd_buf[2]             |       3|       5|     10.64%
+                                        |        |        |
+\deser_inst/lnk_trnd_buf[3]             |       2|       5|     10.64%
+                                        |        |        |
+\ft601_comp/i_pre_valid[0]              |       5|       5|     10.64%
+                                        |        |        |
+\ft601_comp/n3210                       |       3|       5|     10.64%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 47  Score: 29044
+
+Constraints cover  536 paths, 167 nets, and 500 connections (63.6% coverage)
+
+
+Peak memory: 223440896 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

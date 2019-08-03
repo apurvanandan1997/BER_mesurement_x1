@@ -1,0 +1,13 @@
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+@N: NF107 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":26:7:26:9|Selected library: work cell: top view rtl_top as top level
+@N: NF107 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":26:7:26:9|Selected library: work cell: top view rtl_top as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Aug  2 04:56:21 2019
+
+###########################################################]

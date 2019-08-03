@@ -1,0 +1,402 @@
+
+             Lattice Mapping Report File for Design Module 'top'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-2000HC -t TQFP100 -s 6 -oc Commercial
+     ber_measure_impl1.ngd -o ber_measure_impl1_map.ncd -pr
+     ber_measure_impl1.prf -mp ber_measure_impl1.mrp -lpf /home/apurvan/GSoC/usb
+     -plug-mod-working/BER_mesurement_x1/proj/impl1/ber_measure_impl1.lpf -lpf /
+     home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/ber_measure.l
+     pf -c 0 -gui -msgset
+     /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/promote.xml
+     
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-2000HCTQFP100
+Target Performance:   6
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  08/02/19  06:07:30
+
+Design Summary
+--------------
+
+   Number of registers:     85 out of  2352 (4%)
+      PFU registers:           85 out of  2112 (4%)
+      PIO registers:            0 out of   240 (0%)
+   Number of SLICEs:        75 out of  1056 (7%)
+      SLICEs as Logic/ROM:     75 out of  1056 (7%)
+      SLICEs as RAM:            0 out of   792 (0%)
+      SLICEs as Carry:          5 out of  1056 (0%)
+   Number of LUT4s:        148 out of  2112 (7%)
+      Number used as logic LUTs:        138
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       10
+      Number used as shift registers:     0
+   Number of PIO sites used: 49 + 4(JTAG) out of 80 (66%)
+      Number of PIO sites used for single ended IOs: 49
+      Number of PIO sites used for differential IOs: 4 (represented by 2 PIO
+     comps in NCD)
+   Number of IDDR/ODDR/TDDR cells used: 1 out of 240 (0%)
+      Number of IDDR cells:   1
+      Number of ODDR cells:   0
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 1 (1 differential)
+      Number of PIO using IDDR only:        1 (1 differential)
+      Number of PIO using ODDR only:        0 (0 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  1 out of 8 (13%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+
+                                    Page 1
+
+
+
+
+Design:  top                                           Date:  08/02/19  06:07:30
+
+Design Summary (cont)
+---------------------
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  1 out of 2 (50%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  5
+     Net FT601_CLK_c: 20 loads, 20 rising, 0 falling (Driver: PIO FT601_CLK )
+     Net buf_clk: 1 loads, 1 rising, 0 falling (Driver: PIO CLK_LANE )
+     Net sclk: 19 loads, 10 rising, 9 falling (Driver: deser_inst/sclk_63 )
+     Net deser_inst/sclk_buf: 25 loads, 25 rising, 0 falling (Driver:
+     deser_inst/ddrx1_inst/Inst4_DLLDELC )
+     Net decoder_inst/mode: 1 loads, 0 rising, 1 falling (Driver:
+     decoder_inst/ko_227 )
+   Number of Clock Enables:  25
+     Net FT601_SIWU_N_c: 1 loads, 0 LSLICEs
+     Net req_data: 2 loads, 0 LSLICEs
+     Net deser_inst/sclk_buf_enable_13: 1 loads, 1 LSLICEs
+     Net deser_inst/sclk_buf_enable_1: 1 loads, 1 LSLICEs
+     Net deser_inst/bit_slip_N_87: 5 loads, 5 LSLICEs
+     Net deser_inst/sclk_buf_enable_2: 1 loads, 1 LSLICEs
+     Net deser_inst/bit_slip: 3 loads, 3 LSLICEs
+     Net deser_inst/sclk_buf_enable_25: 3 loads, 3 LSLICEs
+     Net deser_inst/sclk_buf_enable_15: 1 loads, 1 LSLICEs
+     Net deser_inst/sclk_buf_enable_20: 1 loads, 1 LSLICEs
+     Net deser_inst/sclk_buf_enable_10: 1 loads, 1 LSLICEs
+     Net deser_inst/sclk_buf_enable_26: 3 loads, 3 LSLICEs
+     Net deser_inst/sclk_buf_enable_17: 1 loads, 1 LSLICEs
+     Net deser_inst/sclk_buf_enable_19: 1 loads, 1 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_17: 2 loads, 2 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_15: 2 loads, 2 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_3: 1 loads, 1 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_8: 2 loads, 2 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_5: 1 loads, 1 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_6: 1 loads, 1 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_7: 1 loads, 1 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_11: 1 loads, 1 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_9: 1 loads, 1 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_10: 1 loads, 1 LSLICEs
+     Net ft601_comp/FT601_CLK_c_enable_18: 2 loads, 2 LSLICEs
+   Number of LSRs:  7
+     Net FT601_SIWU_N_c: 5 loads, 5 LSLICEs
+     Net link_rdy_N_90: 1 loads, 0 LSLICEs
+     Net deser_inst/n3206: 4 loads, 4 LSLICEs
+     Net deser_inst/locked: 9 loads, 9 LSLICEs
+     Net ft601_comp/n1930: 1 loads, 1 LSLICEs
+     Net ft601_comp/n1823: 1 loads, 1 LSLICEs
+     Net ft601_comp/n1722: 1 loads, 1 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  top                                           Date:  08/02/19  06:07:30
+
+Design Summary (cont)
+---------------------
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net ft601_comp/i_tx_state_0: 21 loads
+     Net ft601_comp/i_tx_state_1: 21 loads
+     Net ft601_comp/i_tx_state_2: 17 loads
+     Net deser_inst/locked: 16 loads
+     Net ft601_comp/i_state_2: 14 loads
+     Net debug_2: 13 loads
+     Net ft601_comp/i_state_1: 12 loads
+     Net debug_0: 11 loads
+     Net debug_3: 11 loads
+     Net debug_4: 11 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[10]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[11]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[12]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[13]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[14]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[15]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[16]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[17]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[18]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_TXE_N         | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_RXF_N         | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_CLK           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 3
+
+
+
+
+Design:  top                                           Date:  08/02/19  06:07:30
+
+IO (PIO) Attributes (cont)
+--------------------------
+| FT601_OE_N          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_RD_N          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_SIWU_N        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_WR_N          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_BE[0]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_BE[1]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_BE[2]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_BE[3]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[1]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[2]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[3]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[4]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[5]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[19]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[20]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[21]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[22]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[23]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[24]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[25]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[26]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[27]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[28]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[29]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[30]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[31]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_RST_N         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  top                                           Date:  08/02/19  06:07:30
+
+IO (PIO) Attributes (cont)
+--------------------------
+| FT601_DATA[9]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| CLK_LANE            | INPUT     | LVDS25    |            |
++---------------------+-----------+-----------+------------+
+| DATA_LANE[0]        | INPUT     | LVDS25    |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[6]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[7]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| FT601_DATA[8]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal mode_N_2 was merged into signal decoder_inst/mode
+Signal n1148 was merged into signal ft601_comp/i_byte_en
+Signal rbyteclk_N_94 was merged into signal sclk
+Signal deser_inst/n3217 was merged into signal deser_inst/locked
+Signal deser_inst/sclk_buf_enable_9 was merged into signal deser_inst/bit_slip
+Signal n1723 was merged into signal FT601_SIWU_N_c
+Signal prng_inst/add_389_9/S1 undriven or does not drive anything - clipped.
+Signal prng_inst/add_389_9/CO undriven or does not drive anything - clipped.
+Signal prng_inst/add_389_1/S0 undriven or does not drive anything - clipped.
+Signal prng_inst/add_389_1/CI undriven or does not drive anything - clipped.
+Block decoder_inst/i2470 was optimized away.
+Block ft601_comp/i538_1_lut was optimized away.
+Block deser_inst/i2469 was optimized away.
+Block deser_inst/ddrx1_inst/i391_1_lut_rep_49 was optimized away.
+Block deser_inst/i955_1_lut was optimized away.
+Block i1071_1_lut was optimized away.
+
+Memory Usage
+------------
+
+/cdc_fifo_inst:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR async_fifo_0_1:  TYPE= FIFO8KB,  REGMODE= NOREG,  RESETMODE=
+         ASYNC,  ASYNC_RESET_RELEASE= SYNC,  GSR= DISABLED
+
+     
+
+ASIC Components
+---------------
+
+Instance Name: cdc_fifo_inst/async_fifo_0_1
+         Type: FIFO8KB
+Instance Name: deser_inst/ddrx1_inst/Inst4_DLLDELC
+         Type: DLLDELC
+
+                                    Page 5
+
+
+
+
+Design:  top                                           Date:  08/02/19  06:07:30
+
+ASIC Components (cont)
+----------------------
+Instance Name: deser_inst/ddrx1_inst/Inst3_DQSDLLC
+         Type: DQSDLLC
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 180 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

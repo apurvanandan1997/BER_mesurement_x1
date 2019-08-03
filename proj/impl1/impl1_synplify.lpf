@@ -1,0 +1,24 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat, Build 1796R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "deser_inst/ddrx1_inst/sclk_buf_0_0" 206.0 MHz;
+#FREQUENCY PORT "FT601_CLK" 218.5 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "FT601_CLK_c" TO CLKNET "deser_inst/ddrx1_inst/sclk_buf_0_0";
+#BLOCK PATH FROM CLKNET "deser_inst/ddrx1_inst/sclk_buf_0_0" TO CLKNET "FT601_CLK_c";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

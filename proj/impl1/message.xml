@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd(14): </Dynamic>
+            <Dynamic>async_fifo</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd(30): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/calc_ber.vhd(19): </Dynamic>
+            <Dynamic>calc_ber</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/calc_ber.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/calc_ber.vhd(31): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/calc_ber.vhd</Navigation>
+            <Navigation>31</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd(57): </Dynamic>
+            <Dynamic>dec_8b10b</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd(67): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd</Navigation>
+            <Navigation>67</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/deserializer.vhd(26): </Dynamic>
+            <Dynamic>deserializer</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/deserializer.vhd</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/deserializer.vhd(37): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/deserializer.vhd</Navigation>
+            <Navigation>37</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd(25): </Dynamic>
+            <Dynamic>ft601</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd(56): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd(21): </Dynamic>
+            <Dynamic>prng_recv</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd(42): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd</Navigation>
+            <Navigation>42</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd(26): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd(58): </Dynamic>
+            <Dynamic>rtl_top</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd(14): </Dynamic>
+            <Dynamic>ddrx1</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd(26): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd(162): </Dynamic>
+            <Dynamic>fifo_rd_en_15</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd</Navigation>
+            <Navigation>162</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd(56): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Dynamic>rtl_top</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gnd</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pwr</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LED_N_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>link_rdy</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>q2_buf[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>q2_buf[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sclk_buf</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>locked</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\deser_inst/counter</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DATA_LANE[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CLK_LANE</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd(66): </Dynamic>
+            <Dynamic>\prng_inst/sr_i0</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd(66): </Dynamic>
+            <Dynamic>\prng_inst/sr_i2</Dynamic>
+            <Navigation>/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/usr/local/diamond/3.10_x64/ispfpga/vhdl_packages/syn_arit.vhd(928): </Dynamic>
+            <Dynamic>\deser_inst/counter_FSM_i6</Dynamic>
+            <Navigation>/usr/local/diamond/3.10_x64/ispfpga/vhdl_packages/syn_arit.vhd</Navigation>
+            <Navigation>928</Navigation>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\ft601_comp/i_valid_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=decoder_inst/mode loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=decoder_inst/mode loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

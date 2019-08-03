@@ -1,0 +1,31 @@
+if {![file exists "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/beh_sim/beh_sim.mpf"]} { 
+	project new "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/beh_sim" beh_sim
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/calc_ber.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/deserializer.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top_tb.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_send.vhd"
+	project addfile "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/enc_8b10b.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/calc_ber.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/deserializer.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top_tb.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_send.vhd"
+	vcom -work work "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/enc_8b10b.vhd"
+} else {
+	project open "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/beh_sim/beh_sim"
+}
+vsim -version

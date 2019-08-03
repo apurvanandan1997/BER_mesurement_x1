@@ -1,0 +1,18 @@
+#Start recording tcl command: 7/31/2019 23:34:57
+#Project Location: /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj; Project name: ber_measure
+prj_project new -name "ber_measure" -impl "impl1" -dev LCMXO2-2000HC-6TG100C -synthesis "lse"
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/calc_ber.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/deserializer.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top_tb.vhd"
+prj_project save
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top_tb.vhd" SimulateOnly
+prj_src exclude "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd"
+prj_src remove "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd"
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd"
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/beh_sim/beh_sim.spf"
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_send.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/enc_8b10b.vhd"
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_send.vhd" SimulateOnly
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/enc_8b10b.vhd" SimulateOnly
+prj_project save
+prj_project close
+#Stop recording: 7/31/2019 23:49:31

@@ -1,0 +1,1091 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Sat Aug  3 06:33:55 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     top
+Device,speed:    LCMXO2-2000HC,M
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+</A><A name="FREQUENCY PORT 'FT601_CLK' 100.000000 MH"></A>================================================================================
+Preference: FREQUENCY PORT "FT601_CLK" 100.000000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.381ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/i_state_i0_i0</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/i_state_i0_i0</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.368ns  (63.6% logic, 36.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.368ns physical path delay ft601_comp/SLICE_52 to ft601_comp/SLICE_52 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.381ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R6C22A.CLK,R6C22A.Q0,ft601_comp/SLICE_52:ROUTE, 0.134,R6C22A.Q0,R6C22A.A0,ft601_comp/i_state_0:CTOF_DEL, 0.101,R6C22A.A0,R6C22A.F0,ft601_comp/SLICE_52:ROUTE, 0.000,R6C22A.F0,R6C22A.DI0,ft601_comp/n728">Data path</A> ft601_comp/SLICE_52 to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R6C22A.CLK to      R6C22A.Q0 <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/SLICE_52</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        11     0.134<A href="#@net:ft601_comp/i_state_0:R6C22A.Q0:R6C22A.A0:0.134">      R6C22A.Q0 to R6C22A.A0     </A> <A href="#@net:ft601_comp/i_state_0">ft601_comp/i_state_0</A>
+CTOF_DEL    ---     0.101      R6C22A.A0 to      R6C22A.F0 <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/SLICE_52</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n728:R6C22A.F0:R6C22A.DI0:0.000">      R6C22A.F0 to R6C22A.DI0    </A> <A href="#@net:ft601_comp/n728">ft601_comp/n728</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.368   (63.6% logic, 36.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22A.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22A.CLK:0.809">       63.PADDI to R6C22A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22A.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22A.CLK:0.809">       63.PADDI to R6C22A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.381ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/i_state_i0_i1</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/i_state_i0_i1</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.368ns  (63.6% logic, 36.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.368ns physical path delay ft601_comp/SLICE_52 to ft601_comp/SLICE_52 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.381ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R6C22A.CLK,R6C22A.Q1,ft601_comp/SLICE_52:ROUTE, 0.134,R6C22A.Q1,R6C22A.A1,ft601_comp/i_state_1:CTOF_DEL, 0.101,R6C22A.A1,R6C22A.F1,ft601_comp/SLICE_52:ROUTE, 0.000,R6C22A.F1,R6C22A.DI1,ft601_comp/n727">Data path</A> ft601_comp/SLICE_52 to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R6C22A.CLK to      R6C22A.Q1 <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/SLICE_52</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        12     0.134<A href="#@net:ft601_comp/i_state_1:R6C22A.Q1:R6C22A.A1:0.134">      R6C22A.Q1 to R6C22A.A1     </A> <A href="#@net:ft601_comp/i_state_1">ft601_comp/i_state_1</A>
+CTOF_DEL    ---     0.101      R6C22A.A1 to      R6C22A.F1 <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/SLICE_52</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n727:R6C22A.F1:R6C22A.DI1:0.000">      R6C22A.F1 to R6C22A.DI1    </A> <A href="#@net:ft601_comp/n727">ft601_comp/n727</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.368   (63.6% logic, 36.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22A.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22A.CLK:0.809">       63.PADDI to R6C22A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22A.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22A.CLK:0.809">       63.PADDI to R6C22A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.383ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_53">ft601_comp/i_state_i0_i2</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_53">ft601_comp/i_state_i0_i2</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.370ns  (63.2% logic, 36.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.370ns physical path delay ft601_comp/SLICE_53 to ft601_comp/SLICE_53 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.383ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R6C22D.CLK,R6C22D.Q0,ft601_comp/SLICE_53:ROUTE, 0.136,R6C22D.Q0,R6C22D.A0,ft601_comp/i_state_2:CTOF_DEL, 0.101,R6C22D.A0,R6C22D.F0,ft601_comp/SLICE_53:ROUTE, 0.000,R6C22D.F0,R6C22D.DI0,ft601_comp/n726">Data path</A> ft601_comp/SLICE_53 to ft601_comp/SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R6C22D.CLK to      R6C22D.Q0 <A href="#@comp:ft601_comp/SLICE_53">ft601_comp/SLICE_53</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        14     0.136<A href="#@net:ft601_comp/i_state_2:R6C22D.Q0:R6C22D.A0:0.136">      R6C22D.Q0 to R6C22D.A0     </A> <A href="#@net:ft601_comp/i_state_2">ft601_comp/i_state_2</A>
+CTOF_DEL    ---     0.101      R6C22D.A0 to      R6C22D.F0 <A href="#@comp:ft601_comp/SLICE_53">ft601_comp/SLICE_53</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n726:R6C22D.F0:R6C22D.DI0:0.000">      R6C22D.F0 to R6C22D.DI0    </A> <A href="#@net:ft601_comp/n726">ft601_comp/n726</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.370   (63.2% logic, 36.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22D.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22D.CLK:0.809">       63.PADDI to R6C22D.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22D.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22D.CLK:0.809">       63.PADDI to R6C22D.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.389ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/i_state_i0_i0</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_51">ft601_comp/i_rd_en_672</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.376ns  (62.2% logic, 37.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.376ns physical path delay ft601_comp/SLICE_52 to ft601_comp/SLICE_51 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.389ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R6C22A.CLK,R6C22A.Q0,ft601_comp/SLICE_52:ROUTE, 0.142,R6C22A.Q0,R6C22C.D0,ft601_comp/i_state_0:CTOF_DEL, 0.101,R6C22C.D0,R6C22C.F0,ft601_comp/SLICE_51:ROUTE, 0.000,R6C22C.F0,R6C22C.DI0,ft601_comp/n2319">Data path</A> ft601_comp/SLICE_52 to ft601_comp/SLICE_51:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R6C22A.CLK to      R6C22A.Q0 <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/SLICE_52</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        11     0.142<A href="#@net:ft601_comp/i_state_0:R6C22A.Q0:R6C22C.D0:0.142">      R6C22A.Q0 to R6C22C.D0     </A> <A href="#@net:ft601_comp/i_state_0">ft601_comp/i_state_0</A>
+CTOF_DEL    ---     0.101      R6C22C.D0 to      R6C22C.F0 <A href="#@comp:ft601_comp/SLICE_51">ft601_comp/SLICE_51</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n2319:R6C22C.F0:R6C22C.DI0:0.000">      R6C22C.F0 to R6C22C.DI0    </A> <A href="#@net:ft601_comp/n2319">ft601_comp/n2319</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.376   (62.2% logic, 37.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22A.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22A.CLK:0.809">       63.PADDI to R6C22A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22C.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_51:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22C.CLK:0.809">       63.PADDI to R6C22C.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.389ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_53">ft601_comp/i_state_i0_i2</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_51">ft601_comp/i_rd_en_672</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.376ns  (62.2% logic, 37.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.376ns physical path delay ft601_comp/SLICE_53 to ft601_comp/SLICE_51 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.389ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R6C22D.CLK,R6C22D.Q0,ft601_comp/SLICE_53:ROUTE, 0.142,R6C22D.Q0,R6C22C.C0,ft601_comp/i_state_2:CTOF_DEL, 0.101,R6C22C.C0,R6C22C.F0,ft601_comp/SLICE_51:ROUTE, 0.000,R6C22C.F0,R6C22C.DI0,ft601_comp/n2319">Data path</A> ft601_comp/SLICE_53 to ft601_comp/SLICE_51:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R6C22D.CLK to      R6C22D.Q0 <A href="#@comp:ft601_comp/SLICE_53">ft601_comp/SLICE_53</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        14     0.142<A href="#@net:ft601_comp/i_state_2:R6C22D.Q0:R6C22C.C0:0.142">      R6C22D.Q0 to R6C22C.C0     </A> <A href="#@net:ft601_comp/i_state_2">ft601_comp/i_state_2</A>
+CTOF_DEL    ---     0.101      R6C22C.C0 to      R6C22C.F0 <A href="#@comp:ft601_comp/SLICE_51">ft601_comp/SLICE_51</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n2319:R6C22C.F0:R6C22C.DI0:0.000">      R6C22C.F0 to R6C22C.DI0    </A> <A href="#@net:ft601_comp/n2319">ft601_comp/n2319</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.376   (62.2% logic, 37.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22D.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22D.CLK:0.809">       63.PADDI to R6C22D.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22C.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_51:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22C.CLK:0.809">       63.PADDI to R6C22C.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.390ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_55">ft601_comp/i_tx_state_i0_i2</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_54">ft601_comp/i_tx_state_i0_i0</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.377ns  (62.1% logic, 37.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.377ns physical path delay ft601_comp/SLICE_55 to ft601_comp/SLICE_54 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.390ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R9C24A.CLK,R9C24A.Q0,ft601_comp/SLICE_55:ROUTE, 0.143,R9C24A.Q0,R9C24D.D0,ft601_comp/i_tx_state_2:CTOF_DEL, 0.101,R9C24D.D0,R9C24D.F0,ft601_comp/SLICE_54:ROUTE, 0.000,R9C24D.F0,R9C24D.DI0,ft601_comp/n110">Data path</A> ft601_comp/SLICE_55 to ft601_comp/SLICE_54:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R9C24A.CLK to      R9C24A.Q0 <A href="#@comp:ft601_comp/SLICE_55">ft601_comp/SLICE_55</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        17     0.143<A href="#@net:ft601_comp/i_tx_state_2:R9C24A.Q0:R9C24D.D0:0.143">      R9C24A.Q0 to R9C24D.D0     </A> <A href="#@net:ft601_comp/i_tx_state_2">ft601_comp/i_tx_state_2</A>
+CTOF_DEL    ---     0.101      R9C24D.D0 to      R9C24D.F0 <A href="#@comp:ft601_comp/SLICE_54">ft601_comp/SLICE_54</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n110:R9C24D.F0:R9C24D.DI0:0.000">      R9C24D.F0 to R9C24D.DI0    </A> <A href="#@net:ft601_comp/n110">ft601_comp/n110</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.377   (62.1% logic, 37.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R9C24A.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_55:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R9C24A.CLK:0.809">       63.PADDI to R9C24A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R9C24D.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_54:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R9C24D.CLK:0.809">       63.PADDI to R9C24D.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.390ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_55">ft601_comp/i_tx_state_i0_i2</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_54">ft601_comp/i_tx_state_i0_i1</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.377ns  (62.1% logic, 37.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.377ns physical path delay ft601_comp/SLICE_55 to ft601_comp/SLICE_54 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.390ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R9C24A.CLK,R9C24A.Q0,ft601_comp/SLICE_55:ROUTE, 0.143,R9C24A.Q0,R9C24D.D1,ft601_comp/i_tx_state_2:CTOF_DEL, 0.101,R9C24D.D1,R9C24D.F1,ft601_comp/SLICE_54:ROUTE, 0.000,R9C24D.F1,R9C24D.DI1,ft601_comp/n31">Data path</A> ft601_comp/SLICE_55 to ft601_comp/SLICE_54:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R9C24A.CLK to      R9C24A.Q0 <A href="#@comp:ft601_comp/SLICE_55">ft601_comp/SLICE_55</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        17     0.143<A href="#@net:ft601_comp/i_tx_state_2:R9C24A.Q0:R9C24D.D1:0.143">      R9C24A.Q0 to R9C24D.D1     </A> <A href="#@net:ft601_comp/i_tx_state_2">ft601_comp/i_tx_state_2</A>
+CTOF_DEL    ---     0.101      R9C24D.D1 to      R9C24D.F1 <A href="#@comp:ft601_comp/SLICE_54">ft601_comp/SLICE_54</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n31:R9C24D.F1:R9C24D.DI1:0.000">      R9C24D.F1 to R9C24D.DI1    </A> <A href="#@net:ft601_comp/n31">ft601_comp/n31</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.377   (62.1% logic, 37.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R9C24A.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_55:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R9C24A.CLK:0.809">       63.PADDI to R9C24A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R9C24D.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_54:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R9C24D.CLK:0.809">       63.PADDI to R9C24D.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.390ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_58">ft601_comp/i_valid_i2</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_50">ft601_comp/i_pre_valid_i0_i2</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.377ns  (62.1% logic, 37.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.377ns physical path delay ft601_comp/SLICE_58 to ft601_comp/SLICE_50 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.390ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R9C23C.CLK,R9C23C.Q0,ft601_comp/SLICE_58:ROUTE, 0.143,R9C23C.Q0,R10C23B.D0,ft601_comp/i_valid_2:CTOF_DEL, 0.101,R10C23B.D0,R10C23B.F0,ft601_comp/SLICE_50:ROUTE, 0.000,R10C23B.F0,R10C23B.DI0,ft601_comp/n2725">Data path</A> ft601_comp/SLICE_58 to ft601_comp/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R9C23C.CLK to      R9C23C.Q0 <A href="#@comp:ft601_comp/SLICE_58">ft601_comp/SLICE_58</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE         6     0.143<A href="#@net:ft601_comp/i_valid_2:R9C23C.Q0:R10C23B.D0:0.143">      R9C23C.Q0 to R10C23B.D0    </A> <A href="#@net:ft601_comp/i_valid_2">ft601_comp/i_valid_2</A>
+CTOF_DEL    ---     0.101     R10C23B.D0 to     R10C23B.F0 <A href="#@comp:ft601_comp/SLICE_50">ft601_comp/SLICE_50</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n2725:R10C23B.F0:R10C23B.DI0:0.000">     R10C23B.F0 to R10C23B.DI0   </A> <A href="#@net:ft601_comp/n2725">ft601_comp/n2725</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.377   (62.1% logic, 37.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R9C23C.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_58:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R9C23C.CLK:0.809">       63.PADDI to R9C23C.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R10C23B.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R10C23B.CLK:0.809">       63.PADDI to R10C23B.CLK   </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.392ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/i_state_i0_i0</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_53">ft601_comp/i_state_i0_i2</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.379ns  (61.7% logic, 38.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.379ns physical path delay ft601_comp/SLICE_52 to ft601_comp/SLICE_53 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.392ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R6C22A.CLK,R6C22A.Q0,ft601_comp/SLICE_52:ROUTE, 0.145,R6C22A.Q0,R6C22D.C0,ft601_comp/i_state_0:CTOF_DEL, 0.101,R6C22D.C0,R6C22D.F0,ft601_comp/SLICE_53:ROUTE, 0.000,R6C22D.F0,R6C22D.DI0,ft601_comp/n726">Data path</A> ft601_comp/SLICE_52 to ft601_comp/SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R6C22A.CLK to      R6C22A.Q0 <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/SLICE_52</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        11     0.145<A href="#@net:ft601_comp/i_state_0:R6C22A.Q0:R6C22D.C0:0.145">      R6C22A.Q0 to R6C22D.C0     </A> <A href="#@net:ft601_comp/i_state_0">ft601_comp/i_state_0</A>
+CTOF_DEL    ---     0.101      R6C22D.C0 to      R6C22D.F0 <A href="#@comp:ft601_comp/SLICE_53">ft601_comp/SLICE_53</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n726:R6C22D.F0:R6C22D.DI0:0.000">      R6C22D.F0 to R6C22D.DI0    </A> <A href="#@net:ft601_comp/n726">ft601_comp/n726</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.379   (61.7% logic, 38.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22A.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22A.CLK:0.809">       63.PADDI to R6C22A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22D.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22D.CLK:0.809">       63.PADDI to R6C22D.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.392ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/i_state_i0_i1</A>  (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:ft601_comp/SLICE_43">ft601_comp/ft601_oe_669</A>  (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A> +)
+
+   Delay:               0.379ns  (61.7% logic, 38.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.379ns physical path delay ft601_comp/SLICE_52 to ft601_comp/SLICE_43 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.392ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:REG_DEL, 0.133,R6C22A.CLK,R6C22A.Q1,ft601_comp/SLICE_52:ROUTE, 0.145,R6C22A.Q1,R6C21D.D0,ft601_comp/i_state_1:CTOF_DEL, 0.101,R6C21D.D0,R6C21D.F0,ft601_comp/SLICE_43:ROUTE, 0.000,R6C21D.F0,R6C21D.DI0,ft601_comp/n2716">Data path</A> ft601_comp/SLICE_52 to ft601_comp/SLICE_43:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R6C22A.CLK to      R6C22A.Q1 <A href="#@comp:ft601_comp/SLICE_52">ft601_comp/SLICE_52</A> (from <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+ROUTE        12     0.145<A href="#@net:ft601_comp/i_state_1:R6C22A.Q1:R6C21D.D0:0.145">      R6C22A.Q1 to R6C21D.D0     </A> <A href="#@net:ft601_comp/i_state_1">ft601_comp/i_state_1</A>
+CTOF_DEL    ---     0.101      R6C21D.D0 to      R6C21D.F0 <A href="#@comp:ft601_comp/SLICE_43">ft601_comp/SLICE_43</A>
+ROUTE         1     0.000<A href="#@net:ft601_comp/n2716:R6C21D.F0:R6C21D.DI0:0.000">      R6C21D.F0 to R6C21D.DI0    </A> <A href="#@net:ft601_comp/n2716">ft601_comp/n2716</A> (to <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>)
+                  --------
+                    0.379   (61.7% logic, 38.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C22A.CLK,FT601_CLK_c">Source Clock Path</A> FT601_CLK to ft601_comp/SLICE_52:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C22A.CLK:0.809">       63.PADDI to R6C22A.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'FT601_CLK' 100.000000 MHz ;:ROUTE, 0.809,63.PADDI,R6C21D.CLK,FT601_CLK_c">Destination Clock Path</A> FT601_CLK to ft601_comp/SLICE_43:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        20     0.809<A href="#@net:FT601_CLK_c:63.PADDI:R6C21D.CLK:0.809">       63.PADDI to R6C21D.CLK    </A> <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>
+                  --------
+                    0.809   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+</A><A name="FREQUENCY PORT 'CLK_LANE' 300.000000 MH"></A>================================================================================
+Preference: FREQUENCY PORT "CLK_LANE" 300.000000 MHz ;
+            10 items scored, 8 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#FF0000> 
+
+Error: The following path exceeds requirements by 0.991ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_71">deser_inst/lnk_trnd_buf_i0_i1</A>  (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A> +)
+   Destination:    FIFO8KB    Port           <A href="#@comp:cdc_fifo_inst/async_fifo_0_1">cdc_fifo_inst/async_fifo_0_1</A>(ASIC)  (to <A href="#@net:sclk">sclk</A> +)
+
+   Delay:               0.675ns  (34.7% logic, 65.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.675ns physical path delay SLICE_71 to cdc_fifo_inst/async_fifo_0_1 exceeds
+     -0.041ns LSRREC_HLD and
+      0.000ns delay constraint less
+     -1.707ns skew requirement (totaling 1.666ns) by 0.991ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R10C22D.CLK,R10C22D.Q0,SLICE_71:ROUTE, 0.140,R10C22D.Q0,R10C21C.D1,deser_inst/lnk_trnd_buf_1:CTOF_DEL, 0.101,R10C21C.D1,R10C21C.F1,SLICE_46:ROUTE, 0.301,R10C21C.F1,EBR_R8C21.RST,link_rdy_N_90">Data path</A> SLICE_71 to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R10C22D.CLK to     R10C22D.Q0 <A href="#@comp:SLICE_71">SLICE_71</A> (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>)
+ROUTE         3     0.140<A href="#@net:deser_inst/lnk_trnd_buf_1:R10C22D.Q0:R10C21C.D1:0.140">     R10C22D.Q0 to R10C21C.D1    </A> <A href="#@net:deser_inst/lnk_trnd_buf_1">deser_inst/lnk_trnd_buf_1</A>
+CTOF_DEL    ---     0.101     R10C21C.D1 to     R10C21C.F1 <A href="#@comp:SLICE_46">SLICE_46</A>
+ROUTE         1     0.301<A href="#@net:link_rdy_N_90:R10C21C.F1:EBR_R8C21.RST:0.301">     R10C21C.F1 to EBR_R8C21.RST </A> <A href="#@net:link_rdy_N_90">link_rdy_N_90</A> (to <A href="#@net:sclk">sclk</A>)
+                  --------
+                    0.675   (34.7% logic, 65.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R10C22D.CLK,deser_inst/sclk_buf">Source Clock Path</A> CLK_LANE to SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R10C22D.CLK:0.871">  BDLLDEL0.CLKO to R10C22D.CLK   </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+                  --------
+                    2.205   (52.7% logic, 47.3% route), 2 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R2C14A.CLK,deser_inst/sclk_buf:REG_DEL, 0.154,R2C14A.CLK,R2C14A.Q0,deser_inst/SLICE_60:ROUTE, 1.553,R2C14A.Q0,EBR_R8C21.CLKW,sclk">Destination Clock Path</A> CLK_LANE to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R2C14A.CLK:0.871">  BDLLDEL0.CLKO to R2C14A.CLK    </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+REG_DEL     ---     0.154     R2C14A.CLK to      R2C14A.Q0 <A href="#@comp:deser_inst/SLICE_60">deser_inst/SLICE_60</A>
+ROUTE        19     1.553<A href="#@net:sclk:R2C14A.Q0:EBR_R8C21.CLKW:1.553">      R2C14A.Q0 to EBR_R8C21.CLKW</A> <A href="#@net:sclk">sclk</A>
+                  --------
+                    3.912   (33.6% logic, 66.4% route), 3 logic levels.
+<font color=#FF0000> 
+
+Error: The following path exceeds requirements by 0.990ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_81">deser_inst/lnk_trnd_buf_i0_i3</A>  (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A> +)
+   Destination:    FIFO8KB    Port           <A href="#@comp:cdc_fifo_inst/async_fifo_0_1">cdc_fifo_inst/async_fifo_0_1</A>(ASIC)  (to <A href="#@net:sclk">sclk</A> +)
+
+   Delay:               0.676ns  (34.6% logic, 65.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.676ns physical path delay SLICE_81 to cdc_fifo_inst/async_fifo_0_1 exceeds
+     -0.041ns LSRREC_HLD and
+      0.000ns delay constraint less
+     -1.707ns skew requirement (totaling 1.666ns) by 0.990ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R10C22A.CLK,R10C22A.Q0,SLICE_81:ROUTE, 0.141,R10C22A.Q0,R10C21C.C1,deser_inst/lnk_trnd_buf_3:CTOF_DEL, 0.101,R10C21C.C1,R10C21C.F1,SLICE_46:ROUTE, 0.301,R10C21C.F1,EBR_R8C21.RST,link_rdy_N_90">Data path</A> SLICE_81 to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R10C22A.CLK to     R10C22A.Q0 <A href="#@comp:SLICE_81">SLICE_81</A> (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>)
+ROUTE         2     0.141<A href="#@net:deser_inst/lnk_trnd_buf_3:R10C22A.Q0:R10C21C.C1:0.141">     R10C22A.Q0 to R10C21C.C1    </A> <A href="#@net:deser_inst/lnk_trnd_buf_3">deser_inst/lnk_trnd_buf_3</A>
+CTOF_DEL    ---     0.101     R10C21C.C1 to     R10C21C.F1 <A href="#@comp:SLICE_46">SLICE_46</A>
+ROUTE         1     0.301<A href="#@net:link_rdy_N_90:R10C21C.F1:EBR_R8C21.RST:0.301">     R10C21C.F1 to EBR_R8C21.RST </A> <A href="#@net:link_rdy_N_90">link_rdy_N_90</A> (to <A href="#@net:sclk">sclk</A>)
+                  --------
+                    0.676   (34.6% logic, 65.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R10C22A.CLK,deser_inst/sclk_buf">Source Clock Path</A> CLK_LANE to SLICE_81:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R10C22A.CLK:0.871">  BDLLDEL0.CLKO to R10C22A.CLK   </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+                  --------
+                    2.205   (52.7% logic, 47.3% route), 2 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R2C14A.CLK,deser_inst/sclk_buf:REG_DEL, 0.154,R2C14A.CLK,R2C14A.Q0,deser_inst/SLICE_60:ROUTE, 1.553,R2C14A.Q0,EBR_R8C21.CLKW,sclk">Destination Clock Path</A> CLK_LANE to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R2C14A.CLK:0.871">  BDLLDEL0.CLKO to R2C14A.CLK    </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+REG_DEL     ---     0.154     R2C14A.CLK to      R2C14A.Q0 <A href="#@comp:deser_inst/SLICE_60">deser_inst/SLICE_60</A>
+ROUTE        19     1.553<A href="#@net:sclk:R2C14A.Q0:EBR_R8C21.CLKW:1.553">      R2C14A.Q0 to EBR_R8C21.CLKW</A> <A href="#@net:sclk">sclk</A>
+                  --------
+                    3.912   (33.6% logic, 66.4% route), 3 logic levels.
+<font color=#FF0000> 
+
+Error: The following path exceeds requirements by 0.918ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:deser_inst/SLICE_32">deser_inst/lnk_trnd_buf_i0_i0</A>  (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A> +)
+   Destination:    FIFO8KB    Port           <A href="#@comp:cdc_fifo_inst/async_fifo_0_1">cdc_fifo_inst/async_fifo_0_1</A>(ASIC)  (to <A href="#@net:sclk">sclk</A> +)
+
+   Delay:               0.748ns  (31.3% logic, 68.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.748ns physical path delay deser_inst/SLICE_32 to cdc_fifo_inst/async_fifo_0_1 exceeds
+     -0.041ns LSRREC_HLD and
+      0.000ns delay constraint less
+     -1.707ns skew requirement (totaling 1.666ns) by 0.918ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R10C21B.CLK,R10C21B.Q0,deser_inst/SLICE_32:ROUTE, 0.213,R10C21B.Q0,R10C21C.A1,deser_inst/lnk_trnd_buf_0:CTOF_DEL, 0.101,R10C21C.A1,R10C21C.F1,SLICE_46:ROUTE, 0.301,R10C21C.F1,EBR_R8C21.RST,link_rdy_N_90">Data path</A> deser_inst/SLICE_32 to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R10C21B.CLK to     R10C21B.Q0 <A href="#@comp:deser_inst/SLICE_32">deser_inst/SLICE_32</A> (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>)
+ROUTE         3     0.213<A href="#@net:deser_inst/lnk_trnd_buf_0:R10C21B.Q0:R10C21C.A1:0.213">     R10C21B.Q0 to R10C21C.A1    </A> <A href="#@net:deser_inst/lnk_trnd_buf_0">deser_inst/lnk_trnd_buf_0</A>
+CTOF_DEL    ---     0.101     R10C21C.A1 to     R10C21C.F1 <A href="#@comp:SLICE_46">SLICE_46</A>
+ROUTE         1     0.301<A href="#@net:link_rdy_N_90:R10C21C.F1:EBR_R8C21.RST:0.301">     R10C21C.F1 to EBR_R8C21.RST </A> <A href="#@net:link_rdy_N_90">link_rdy_N_90</A> (to <A href="#@net:sclk">sclk</A>)
+                  --------
+                    0.748   (31.3% logic, 68.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R10C21B.CLK,deser_inst/sclk_buf">Source Clock Path</A> CLK_LANE to deser_inst/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R10C21B.CLK:0.871">  BDLLDEL0.CLKO to R10C21B.CLK   </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+                  --------
+                    2.205   (52.7% logic, 47.3% route), 2 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R2C14A.CLK,deser_inst/sclk_buf:REG_DEL, 0.154,R2C14A.CLK,R2C14A.Q0,deser_inst/SLICE_60:ROUTE, 1.553,R2C14A.Q0,EBR_R8C21.CLKW,sclk">Destination Clock Path</A> CLK_LANE to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R2C14A.CLK:0.871">  BDLLDEL0.CLKO to R2C14A.CLK    </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+REG_DEL     ---     0.154     R2C14A.CLK to      R2C14A.Q0 <A href="#@comp:deser_inst/SLICE_60">deser_inst/SLICE_60</A>
+ROUTE        19     1.553<A href="#@net:sclk:R2C14A.Q0:EBR_R8C21.CLKW:1.553">      R2C14A.Q0 to EBR_R8C21.CLKW</A> <A href="#@net:sclk">sclk</A>
+                  --------
+                    3.912   (33.6% logic, 66.4% route), 3 logic levels.
+<font color=#FF0000> 
+
+Error: The following path exceeds requirements by 0.791ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_71">deser_inst/lnk_trnd_buf_i0_i2</A>  (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A> +)
+   Destination:    FIFO8KB    Port           <A href="#@comp:cdc_fifo_inst/async_fifo_0_1">cdc_fifo_inst/async_fifo_0_1</A>(ASIC)  (to <A href="#@net:sclk">sclk</A> +)
+
+   Delay:               0.875ns  (26.7% logic, 73.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.875ns physical path delay SLICE_71 to cdc_fifo_inst/async_fifo_0_1 exceeds
+     -0.041ns LSRREC_HLD and
+      0.000ns delay constraint less
+     -1.707ns skew requirement (totaling 1.666ns) by 0.791ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R10C22D.CLK,R10C22D.Q1,SLICE_71:ROUTE, 0.340,R10C22D.Q1,R10C21C.B1,deser_inst/lnk_trnd_buf_2:CTOF_DEL, 0.101,R10C21C.B1,R10C21C.F1,SLICE_46:ROUTE, 0.301,R10C21C.F1,EBR_R8C21.RST,link_rdy_N_90">Data path</A> SLICE_71 to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R10C22D.CLK to     R10C22D.Q1 <A href="#@comp:SLICE_71">SLICE_71</A> (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>)
+ROUTE         3     0.340<A href="#@net:deser_inst/lnk_trnd_buf_2:R10C22D.Q1:R10C21C.B1:0.340">     R10C22D.Q1 to R10C21C.B1    </A> <A href="#@net:deser_inst/lnk_trnd_buf_2">deser_inst/lnk_trnd_buf_2</A>
+CTOF_DEL    ---     0.101     R10C21C.B1 to     R10C21C.F1 <A href="#@comp:SLICE_46">SLICE_46</A>
+ROUTE         1     0.301<A href="#@net:link_rdy_N_90:R10C21C.F1:EBR_R8C21.RST:0.301">     R10C21C.F1 to EBR_R8C21.RST </A> <A href="#@net:link_rdy_N_90">link_rdy_N_90</A> (to <A href="#@net:sclk">sclk</A>)
+                  --------
+                    0.875   (26.7% logic, 73.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R10C22D.CLK,deser_inst/sclk_buf">Source Clock Path</A> CLK_LANE to SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R10C22D.CLK:0.871">  BDLLDEL0.CLKO to R10C22D.CLK   </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+                  --------
+                    2.205   (52.7% logic, 47.3% route), 2 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R2C14A.CLK,deser_inst/sclk_buf:REG_DEL, 0.154,R2C14A.CLK,R2C14A.Q0,deser_inst/SLICE_60:ROUTE, 1.553,R2C14A.Q0,EBR_R8C21.CLKW,sclk">Destination Clock Path</A> CLK_LANE to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R2C14A.CLK:0.871">  BDLLDEL0.CLKO to R2C14A.CLK    </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+REG_DEL     ---     0.154     R2C14A.CLK to      R2C14A.Q0 <A href="#@comp:deser_inst/SLICE_60">deser_inst/SLICE_60</A>
+ROUTE        19     1.553<A href="#@net:sclk:R2C14A.Q0:EBR_R8C21.CLKW:1.553">      R2C14A.Q0 to EBR_R8C21.CLKW</A> <A href="#@net:sclk">sclk</A>
+                  --------
+                    3.912   (33.6% logic, 66.4% route), 3 logic levels.
+<font color=#FF0000> 
+
+Error: The following path exceeds requirements by 0.200ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_71">deser_inst/lnk_trnd_buf_i0_i2</A>  (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_11">ce_14</A>  (to <A href="#@net:decoder_inst/mode">decoder_inst/mode</A> -)
+
+   Delay:               0.379ns  (61.7% logic, 38.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.379ns physical path delay SLICE_71 to SLICE_11 exceeds
+     -0.013ns DIN_HLD and
+     -1.667ns delay constraint less
+     -2.259ns skew requirement (totaling 0.579ns) by 0.200ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R10C22D.CLK,R10C22D.Q1,SLICE_71:ROUTE, 0.140,R10C22D.Q1,R10C20C.D0,deser_inst/lnk_trnd_buf_2:CTOF_DEL, 0.101,R10C20C.D0,R10C20C.F0,SLICE_11:ROUTE, 0.005,R10C20C.F0,R10C20C.DI0,n3209">Data path</A> SLICE_71 to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R10C22D.CLK to     R10C22D.Q1 <A href="#@comp:SLICE_71">SLICE_71</A> (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>)
+ROUTE         3     0.140<A href="#@net:deser_inst/lnk_trnd_buf_2:R10C22D.Q1:R10C20C.D0:0.140">     R10C22D.Q1 to R10C20C.D0    </A> <A href="#@net:deser_inst/lnk_trnd_buf_2">deser_inst/lnk_trnd_buf_2</A>
+CTOF_DEL    ---     0.101     R10C20C.D0 to     R10C20C.F0 <A href="#@comp:SLICE_11">SLICE_11</A>
+ROUTE         8     0.005<A href="#@net:n3209:R10C20C.F0:R10C20C.DI0:0.005">     R10C20C.F0 to R10C20C.DI0   </A> <A href="#@net:n3209">n3209</A> (to <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>)
+                  --------
+                    0.379   (61.7% logic, 38.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R10C22D.CLK,deser_inst/sclk_buf">Source Clock Path</A> CLK_LANE to SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R10C22D.CLK:0.871">  BDLLDEL0.CLKO to R10C22D.CLK   </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+                  --------
+                    2.205   (52.7% logic, 47.3% route), 2 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R2C14A.CLK,deser_inst/sclk_buf:REG_DEL, 0.154,R2C14A.CLK,R2C14A.Q0,deser_inst/SLICE_60:ROUTE, 1.499,R2C14A.Q0,R9C21D.CLK,sclk:REG_DEL, 0.154,R9C21D.CLK,R9C21D.Q0,decoder_inst/SLICE_25:ROUTE, 0.452,R9C21D.Q0,R10C20C.CLK,decoder_inst/mode">Destination Clock Path</A> CLK_LANE to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R2C14A.CLK:0.871">  BDLLDEL0.CLKO to R2C14A.CLK    </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+REG_DEL     ---     0.154     R2C14A.CLK to      R2C14A.Q0 <A href="#@comp:deser_inst/SLICE_60">deser_inst/SLICE_60</A>
+ROUTE        19     1.499<A href="#@net:sclk:R2C14A.Q0:R9C21D.CLK:1.499">      R2C14A.Q0 to R9C21D.CLK    </A> <A href="#@net:sclk">sclk</A>
+REG_DEL     ---     0.154     R9C21D.CLK to      R9C21D.Q0 <A href="#@comp:decoder_inst/SLICE_25">decoder_inst/SLICE_25</A>
+ROUTE         1     0.452<A href="#@net:decoder_inst/mode:R9C21D.Q0:R10C20C.CLK:0.452">      R9C21D.Q0 to R10C20C.CLK   </A> <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>
+                  --------
+                    4.464   (32.9% logic, 67.1% route), 4 logic levels.
+<font color=#FF0000> 
+
+Error: The following path exceeds requirements by 0.199ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_81">deser_inst/lnk_trnd_buf_i0_i3</A>  (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_11">ce_14</A>  (to <A href="#@net:decoder_inst/mode">decoder_inst/mode</A> -)
+
+   Delay:               0.380ns  (61.6% logic, 38.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.380ns physical path delay SLICE_81 to SLICE_11 exceeds
+     -0.013ns DIN_HLD and
+     -1.667ns delay constraint less
+     -2.259ns skew requirement (totaling 0.579ns) by 0.199ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R10C22A.CLK,R10C22A.Q0,SLICE_81:ROUTE, 0.141,R10C22A.Q0,R10C20C.C0,deser_inst/lnk_trnd_buf_3:CTOF_DEL, 0.101,R10C20C.C0,R10C20C.F0,SLICE_11:ROUTE, 0.005,R10C20C.F0,R10C20C.DI0,n3209">Data path</A> SLICE_81 to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R10C22A.CLK to     R10C22A.Q0 <A href="#@comp:SLICE_81">SLICE_81</A> (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>)
+ROUTE         2     0.141<A href="#@net:deser_inst/lnk_trnd_buf_3:R10C22A.Q0:R10C20C.C0:0.141">     R10C22A.Q0 to R10C20C.C0    </A> <A href="#@net:deser_inst/lnk_trnd_buf_3">deser_inst/lnk_trnd_buf_3</A>
+CTOF_DEL    ---     0.101     R10C20C.C0 to     R10C20C.F0 <A href="#@comp:SLICE_11">SLICE_11</A>
+ROUTE         8     0.005<A href="#@net:n3209:R10C20C.F0:R10C20C.DI0:0.005">     R10C20C.F0 to R10C20C.DI0   </A> <A href="#@net:n3209">n3209</A> (to <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>)
+                  --------
+                    0.380   (61.6% logic, 38.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R10C22A.CLK,deser_inst/sclk_buf">Source Clock Path</A> CLK_LANE to SLICE_81:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R10C22A.CLK:0.871">  BDLLDEL0.CLKO to R10C22A.CLK   </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+                  --------
+                    2.205   (52.7% logic, 47.3% route), 2 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R2C14A.CLK,deser_inst/sclk_buf:REG_DEL, 0.154,R2C14A.CLK,R2C14A.Q0,deser_inst/SLICE_60:ROUTE, 1.499,R2C14A.Q0,R9C21D.CLK,sclk:REG_DEL, 0.154,R9C21D.CLK,R9C21D.Q0,decoder_inst/SLICE_25:ROUTE, 0.452,R9C21D.Q0,R10C20C.CLK,decoder_inst/mode">Destination Clock Path</A> CLK_LANE to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R2C14A.CLK:0.871">  BDLLDEL0.CLKO to R2C14A.CLK    </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+REG_DEL     ---     0.154     R2C14A.CLK to      R2C14A.Q0 <A href="#@comp:deser_inst/SLICE_60">deser_inst/SLICE_60</A>
+ROUTE        19     1.499<A href="#@net:sclk:R2C14A.Q0:R9C21D.CLK:1.499">      R2C14A.Q0 to R9C21D.CLK    </A> <A href="#@net:sclk">sclk</A>
+REG_DEL     ---     0.154     R9C21D.CLK to      R9C21D.Q0 <A href="#@comp:decoder_inst/SLICE_25">decoder_inst/SLICE_25</A>
+ROUTE         1     0.452<A href="#@net:decoder_inst/mode:R9C21D.Q0:R10C20C.CLK:0.452">      R9C21D.Q0 to R10C20C.CLK   </A> <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>
+                  --------
+                    4.464   (32.9% logic, 67.1% route), 4 logic levels.
+<font color=#FF0000> 
+
+Error: The following path exceeds requirements by 0.113ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:deser_inst/SLICE_32">deser_inst/lnk_trnd_buf_i0_i0</A>  (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_11">ce_14</A>  (to <A href="#@net:decoder_inst/mode">decoder_inst/mode</A> -)
+
+   Delay:               0.466ns  (50.2% logic, 49.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.466ns physical path delay deser_inst/SLICE_32 to SLICE_11 exceeds
+     -0.013ns DIN_HLD and
+     -1.667ns delay constraint less
+     -2.259ns skew requirement (totaling 0.579ns) by 0.113ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R10C21B.CLK,R10C21B.Q0,deser_inst/SLICE_32:ROUTE, 0.227,R10C21B.Q0,R10C20C.B0,deser_inst/lnk_trnd_buf_0:CTOF_DEL, 0.101,R10C20C.B0,R10C20C.F0,SLICE_11:ROUTE, 0.005,R10C20C.F0,R10C20C.DI0,n3209">Data path</A> deser_inst/SLICE_32 to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R10C21B.CLK to     R10C21B.Q0 <A href="#@comp:deser_inst/SLICE_32">deser_inst/SLICE_32</A> (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>)
+ROUTE         3     0.227<A href="#@net:deser_inst/lnk_trnd_buf_0:R10C21B.Q0:R10C20C.B0:0.227">     R10C21B.Q0 to R10C20C.B0    </A> <A href="#@net:deser_inst/lnk_trnd_buf_0">deser_inst/lnk_trnd_buf_0</A>
+CTOF_DEL    ---     0.101     R10C20C.B0 to     R10C20C.F0 <A href="#@comp:SLICE_11">SLICE_11</A>
+ROUTE         8     0.005<A href="#@net:n3209:R10C20C.F0:R10C20C.DI0:0.005">     R10C20C.F0 to R10C20C.DI0   </A> <A href="#@net:n3209">n3209</A> (to <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>)
+                  --------
+                    0.466   (50.2% logic, 49.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R10C21B.CLK,deser_inst/sclk_buf">Source Clock Path</A> CLK_LANE to deser_inst/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R10C21B.CLK:0.871">  BDLLDEL0.CLKO to R10C21B.CLK   </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+                  --------
+                    2.205   (52.7% logic, 47.3% route), 2 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R2C14A.CLK,deser_inst/sclk_buf:REG_DEL, 0.154,R2C14A.CLK,R2C14A.Q0,deser_inst/SLICE_60:ROUTE, 1.499,R2C14A.Q0,R9C21D.CLK,sclk:REG_DEL, 0.154,R9C21D.CLK,R9C21D.Q0,decoder_inst/SLICE_25:ROUTE, 0.452,R9C21D.Q0,R10C20C.CLK,decoder_inst/mode">Destination Clock Path</A> CLK_LANE to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R2C14A.CLK:0.871">  BDLLDEL0.CLKO to R2C14A.CLK    </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+REG_DEL     ---     0.154     R2C14A.CLK to      R2C14A.Q0 <A href="#@comp:deser_inst/SLICE_60">deser_inst/SLICE_60</A>
+ROUTE        19     1.499<A href="#@net:sclk:R2C14A.Q0:R9C21D.CLK:1.499">      R2C14A.Q0 to R9C21D.CLK    </A> <A href="#@net:sclk">sclk</A>
+REG_DEL     ---     0.154     R9C21D.CLK to      R9C21D.Q0 <A href="#@comp:decoder_inst/SLICE_25">decoder_inst/SLICE_25</A>
+ROUTE         1     0.452<A href="#@net:decoder_inst/mode:R9C21D.Q0:R10C20C.CLK:0.452">      R9C21D.Q0 to R10C20C.CLK   </A> <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>
+                  --------
+                    4.464   (32.9% logic, 67.1% route), 4 logic levels.
+<font color=#FF0000> 
+
+Error: The following path exceeds requirements by 0.012ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_71">deser_inst/lnk_trnd_buf_i0_i1</A>  (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_11">ce_14</A>  (to <A href="#@net:decoder_inst/mode">decoder_inst/mode</A> -)
+
+   Delay:               0.567ns  (41.3% logic, 58.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.567ns physical path delay SLICE_71 to SLICE_11 exceeds
+     -0.013ns DIN_HLD and
+     -1.667ns delay constraint less
+     -2.259ns skew requirement (totaling 0.579ns) by 0.012ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R10C22D.CLK,R10C22D.Q0,SLICE_71:ROUTE, 0.328,R10C22D.Q0,R10C20C.A0,deser_inst/lnk_trnd_buf_1:CTOF_DEL, 0.101,R10C20C.A0,R10C20C.F0,SLICE_11:ROUTE, 0.005,R10C20C.F0,R10C20C.DI0,n3209">Data path</A> SLICE_71 to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R10C22D.CLK to     R10C22D.Q0 <A href="#@comp:SLICE_71">SLICE_71</A> (from <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>)
+ROUTE         3     0.328<A href="#@net:deser_inst/lnk_trnd_buf_1:R10C22D.Q0:R10C20C.A0:0.328">     R10C22D.Q0 to R10C20C.A0    </A> <A href="#@net:deser_inst/lnk_trnd_buf_1">deser_inst/lnk_trnd_buf_1</A>
+CTOF_DEL    ---     0.101     R10C20C.A0 to     R10C20C.F0 <A href="#@comp:SLICE_11">SLICE_11</A>
+ROUTE         8     0.005<A href="#@net:n3209:R10C20C.F0:R10C20C.DI0:0.005">     R10C20C.F0 to R10C20C.DI0   </A> <A href="#@net:n3209">n3209</A> (to <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>)
+                  --------
+                    0.567   (41.3% logic, 58.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R10C22D.CLK,deser_inst/sclk_buf">Source Clock Path</A> CLK_LANE to SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R10C22D.CLK:0.871">  BDLLDEL0.CLKO to R10C22D.CLK   </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+                  --------
+                    2.205   (52.7% logic, 47.3% route), 2 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:PADI_DEL, 0.533,34.PAD,34.PADDI,CLK_LANE:ROUTE, 0.172,34.PADDI,BDLLDEL0.CLKI,buf_clk:CLKI2O_DEL, 0.629,BDLLDEL0.CLKI,BDLLDEL0.CLKO,deser_inst/ddrx1_inst/Inst4_DLLDELC:ROUTE, 0.871,BDLLDEL0.CLKO,R2C14A.CLK,deser_inst/sclk_buf:REG_DEL, 0.154,R2C14A.CLK,R2C14A.Q0,deser_inst/SLICE_60:ROUTE, 1.499,R2C14A.Q0,R9C21D.CLK,sclk:REG_DEL, 0.154,R9C21D.CLK,R9C21D.Q0,decoder_inst/SLICE_25:ROUTE, 0.452,R9C21D.Q0,R10C20C.CLK,decoder_inst/mode">Destination Clock Path</A> CLK_LANE to SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.533         34.PAD to       34.PADDI <A href="#@comp:CLK_LANE">CLK_LANE</A>
+ROUTE         1     0.172<A href="#@net:buf_clk:34.PADDI:BDLLDEL0.CLKI:0.172">       34.PADDI to BDLLDEL0.CLKI </A> <A href="#@net:buf_clk">buf_clk</A>
+CLKI2O_DEL  ---     0.629  BDLLDEL0.CLKI to  BDLLDEL0.CLKO <A href="#@comp:deser_inst/ddrx1_inst/Inst4_DLLDELC">deser_inst/ddrx1_inst/Inst4_DLLDELC</A>
+ROUTE        25     0.871<A href="#@net:deser_inst/sclk_buf:BDLLDEL0.CLKO:R2C14A.CLK:0.871">  BDLLDEL0.CLKO to R2C14A.CLK    </A> <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>
+REG_DEL     ---     0.154     R2C14A.CLK to      R2C14A.Q0 <A href="#@comp:deser_inst/SLICE_60">deser_inst/SLICE_60</A>
+ROUTE        19     1.499<A href="#@net:sclk:R2C14A.Q0:R9C21D.CLK:1.499">      R2C14A.Q0 to R9C21D.CLK    </A> <A href="#@net:sclk">sclk</A>
+REG_DEL     ---     0.154     R9C21D.CLK to      R9C21D.Q0 <A href="#@comp:decoder_inst/SLICE_25">decoder_inst/SLICE_25</A>
+ROUTE         1     0.452<A href="#@net:decoder_inst/mode:R9C21D.Q0:R10C20C.CLK:0.452">      R9C21D.Q0 to R10C20C.CLK   </A> <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>
+                  --------
+                    4.464   (32.9% logic, 67.1% route), 4 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.241ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:decoder_inst/SLICE_73">decoder_inst/dec_data_i2</A>  (from <A href="#@net:sclk">sclk</A> +)
+   Destination:    FIFO8KB    Port           <A href="#@comp:cdc_fifo_inst/async_fifo_0_1">cdc_fifo_inst/async_fifo_0_1</A>(ASIC)  (to <A href="#@net:sclk">sclk</A> +)
+
+   Delay:               0.306ns  (43.5% logic, 56.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.306ns physical path delay decoder_inst/SLICE_73 to cdc_fifo_inst/async_fifo_0_1 meets
+      0.011ns DATA_HLD and
+      0.000ns delay constraint less
+     -0.054ns skew requirement (totaling 0.065ns) by 0.241ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R7C23C.CLK,R7C23C.Q1,decoder_inst/SLICE_73:ROUTE, 0.173,R7C23C.Q1,EBR_R8C21.DI9,FT601_DATA_c_9">Data path</A> decoder_inst/SLICE_73 to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R7C23C.CLK to      R7C23C.Q1 <A href="#@comp:decoder_inst/SLICE_73">decoder_inst/SLICE_73</A> (from <A href="#@net:sclk">sclk</A>)
+ROUTE         2     0.173<A href="#@net:FT601_DATA_c_9:R7C23C.Q1:EBR_R8C21.DI9:0.173">      R7C23C.Q1 to EBR_R8C21.DI9 </A> <A href="#@net:FT601_DATA_c_9">FT601_DATA_c_9</A> (to <A href="#@net:sclk">sclk</A>)
+                  --------
+                    0.306   (43.5% logic, 56.5% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:ROUTE, 1.499,R2C14A.Q0,R7C23C.CLK,sclk">Source Clock Path</A> deser_inst/SLICE_60 to decoder_inst/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        19     1.499<A href="#@net:sclk:R2C14A.Q0:R7C23C.CLK:1.499">      R2C14A.Q0 to R7C23C.CLK    </A> <A href="#@net:sclk">sclk</A>
+                  --------
+                    1.499   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:ROUTE, 1.553,R2C14A.Q0,EBR_R8C21.CLKW,sclk">Destination Clock Path</A> deser_inst/SLICE_60 to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        19     1.553<A href="#@net:sclk:R2C14A.Q0:EBR_R8C21.CLKW:1.553">      R2C14A.Q0 to EBR_R8C21.CLKW</A> <A href="#@net:sclk">sclk</A>
+                  --------
+                    1.553   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.261ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:decoder_inst/SLICE_75">decoder_inst/dec_data_i4</A>  (from <A href="#@net:sclk">sclk</A> +)
+   Destination:    FIFO8KB    Port           <A href="#@comp:cdc_fifo_inst/async_fifo_0_1">cdc_fifo_inst/async_fifo_0_1</A>(ASIC)  (to <A href="#@net:sclk">sclk</A> +)
+
+   Delay:               0.326ns  (40.8% logic, 59.2% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.326ns physical path delay decoder_inst/SLICE_75 to cdc_fifo_inst/async_fifo_0_1 meets
+      0.011ns DATA_HLD and
+      0.000ns delay constraint less
+     -0.054ns skew requirement (totaling 0.065ns) by 0.261ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:REG_DEL, 0.133,R9C22B.CLK,R9C22B.Q1,decoder_inst/SLICE_75:ROUTE, 0.193,R9C22B.Q1,EBR_R8C21.DI11,FT601_DATA_c_11">Data path</A> decoder_inst/SLICE_75 to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R9C22B.CLK to      R9C22B.Q1 <A href="#@comp:decoder_inst/SLICE_75">decoder_inst/SLICE_75</A> (from <A href="#@net:sclk">sclk</A>)
+ROUTE         2     0.193<A href="#@net:FT601_DATA_c_11:R9C22B.Q1:EBR_R8C21.DI11:0.193">      R9C22B.Q1 to EBR_R8C21.DI11</A> <A href="#@net:FT601_DATA_c_11">FT601_DATA_c_11</A> (to <A href="#@net:sclk">sclk</A>)
+                  --------
+                    0.326   (40.8% logic, 59.2% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:ROUTE, 1.499,R2C14A.Q0,R9C22B.CLK,sclk">Source Clock Path</A> deser_inst/SLICE_60 to decoder_inst/SLICE_75:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        19     1.499<A href="#@net:sclk:R2C14A.Q0:R9C22B.CLK:1.499">      R2C14A.Q0 to R9C22B.CLK    </A> <A href="#@net:sclk">sclk</A>
+                  --------
+                    1.499   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'CLK_LANE' 300.000000 MHz ;:ROUTE, 1.553,R2C14A.Q0,EBR_R8C21.CLKW,sclk">Destination Clock Path</A> deser_inst/SLICE_60 to cdc_fifo_inst/async_fifo_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        19     1.553<A href="#@net:sclk:R2C14A.Q0:EBR_R8C21.CLKW:1.553">      R2C14A.Q0 to EBR_R8C21.CLKW</A> <A href="#@net:sclk">sclk</A>
+                  --------
+                    1.553   (0.0% logic, 100.0% route), 0 logic levels.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY PORT "FT601_CLK" 100.000000   |             |             |
+MHz ;                                   |            -|            -|   2  
+                                        |             |             |
+FREQUENCY PORT "CLK_LANE" 300.000000    |             |             |
+MHz ;                                   |            -|            -|   2 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+link_rdy_N_90                           |       1|       4|     50.00%
+                                        |        |        |
+n3209                                   |       8|       4|     50.00%
+                                        |        |        |
+deser_inst/lnk_trnd_buf_1               |       3|       2|     25.00%
+                                        |        |        |
+deser_inst/lnk_trnd_buf_0               |       3|       2|     25.00%
+                                        |        |        |
+deser_inst/lnk_trnd_buf_3               |       2|       2|     25.00%
+                                        |        |        |
+deser_inst/lnk_trnd_buf_2               |       3|       2|     25.00%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 6 clocks:
+
+Clock Domain: <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>   Source: deser_inst/ddrx1_inst/Inst4_DLLDELC.CLKO   Loads: 25
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>   Source: decoder_inst/SLICE_25.Q0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:sclk">sclk</A>   Source: deser_inst/SLICE_60.Q0   Loads: 19
+   Covered under: FREQUENCY PORT "CLK_LANE" 300.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>   Source: deser_inst/ddrx1_inst/Inst4_DLLDELC.CLKO
+      Covered under: FREQUENCY PORT "CLK_LANE" 300.000000 MHz ;   Transfers: 12
+
+   Clock Domain: <A href="#@net:deser_inst/sclk_buf">deser_inst/sclk_buf</A>   Source: deser_inst/ddrx1_inst/Inst4_DLLDELC.CLKO
+      Covered under: FREQUENCY PORT "CLK_LANE" 300.000000 MHz ;   Transfers: 2
+
+   Clock Domain: <A href="#@net:decoder_inst/mode">decoder_inst/mode</A>   Source: decoder_inst/SLICE_25.Q0
+      Covered under: FREQUENCY PORT "CLK_LANE" 300.000000 MHz ;   Transfers: 1
+
+Clock Domain: <A href="#@net:FT601_CLK_c">FT601_CLK_c</A>   Source: FT601_CLK.PAD   Loads: 20
+   Covered under: FREQUENCY PORT "FT601_CLK" 100.000000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 8  Score: 4214
+Cumulative negative slack: 4214
+
+Constraints cover 848 paths, 5 nets, and 704 connections (95.65% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 10 (setup), 8 (hold)
+Score: 30593 (setup), 4214 (hold)
+Cumulative negative slack: 34807 (30593+4214)

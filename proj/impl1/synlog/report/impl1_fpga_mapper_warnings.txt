@@ -1,0 +1,7 @@
+@W: MT246 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd":111:4:111:17|Blackbox fifo8kb is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd":82:4:82:16|Blackbox DELAYE is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd":76:4:76:16|Blackbox DQSDLLC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd":73:4:73:16|Blackbox DLLDELC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd":69:4:69:16|Blackbox IDDRXE is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock top|FT601_CLK with period 4.58ns. Please declare a user-defined clock on object "p:FT601_CLK"
+@W: MT420 |Found inferred clock ddrx1|sclk_inferred_clock with period 4.85ns. Please declare a user-defined clock on object "n:deser_inst.ddrx1_inst.sclk"

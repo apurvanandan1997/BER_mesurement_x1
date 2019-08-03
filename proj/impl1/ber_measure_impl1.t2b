@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj"  

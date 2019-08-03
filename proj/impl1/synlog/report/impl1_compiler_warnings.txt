@@ -1,0 +1,19 @@
+@W: CD326 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":212:27:212:39|Port debug of entity work.calc_ber is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD276 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd":48:8:48:15|Map for port data_out of component ft601 not found
+@W: CD276 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd":49:8:49:18|Map for port dat_out_rdy of component ft601 not found
+@W: CD730 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":239:4:239:13|Component declaration has 15 ports but entity declares 17 ports
+@W: CD326 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":239:4:239:13|Port dat_out_rdy of entity work.ft601 is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":239:4:239:13|Port data_out of entity work.ft601 is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":239:4:239:13|Port led of entity work.ft601 is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD638 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":119:11:119:17|Signal fifo_in is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":120:11:120:21|Signal fifo_wr_clk is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":121:11:121:21|Signal fifo_rd_clk is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":134:11:134:14|Signal eclk is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":136:11:136:18|Signal par_byte is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":142:11:142:17|Signal clk_int is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL168 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd":212:27:212:39|Removing instance calc_ber_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL279 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd":51:8:51:9|Pruning register bits 23 to 0 of sr(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL249 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd":98:8:98:9|Initial value is not supported on state machine i_state
+@W: CL249 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd":153:8:153:9|Initial value is not supported on state machine i_pre_valid
+@W: CL249 :"/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd":153:8:153:9|Initial value is not supported on state machine i_tx_state
+

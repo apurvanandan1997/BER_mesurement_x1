@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/top</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb/ise_proj/ise_proj/top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/ise_proj/ise_proj/top.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/top/rtl</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb/ise_proj/ise_proj/top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/ise_proj/ise_proj/top.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/enc_8b10b</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb/src/enc_8b10b.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/src/enc_8b10b.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/enc_8b10b/rtl</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb/src/enc_8b10b.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/src/enc_8b10b.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/prng_send</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb/src/prng_send.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/src/prng_send.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/prng_send/rtl</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb/src/prng_send.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/src/prng_send.vhd</arg>&quot;.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/src/prng_send.vhd</arg>&quot; line <arg fmt="%d" index="2">82</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sr&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">prng_send</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">fb</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rng&lt;23:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">test_counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">prng_send</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">test_counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">prng_send</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">test_counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">prng_send</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">test_counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">prng_send</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">test_counter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">prng_send</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">test_counter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">prng_send</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">PLL_BASE_inst</arg> in unit <arg fmt="%s" index="2">top</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+</messages>
+

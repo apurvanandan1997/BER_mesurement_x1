@@ -1,0 +1,55 @@
+#Start recording tcl command: 8/1/2019 11:50:20
+#Project Location: /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj; Project name: ber_measure
+prj_project open "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/ber_measure.ldf"
+prj_run Export -impl impl1 -task Bitgen
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/par_sim/par_sim.spf"
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd" SimulateOnly
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd" SynthesisAndSimulate
+prj_src enable "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd"
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+launch_synplify_prj impl1
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_project save
+prj_project close
+#Stop recording: 8/2/2019 06:27:08

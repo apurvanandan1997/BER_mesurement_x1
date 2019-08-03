@@ -1,0 +1,724 @@
+/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/enc_8b10b.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/enc_8b10b.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity enc_8b10b
+-- Compiling architecture rtl of enc_8b10b
+
+} {} {}} /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/impl1/ber_measure_impl1_vho.vho {1 {vcom -work work -2002 -explicit -stats=none /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/impl1/ber_measure_impl1_vho.vho
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package std_logic_arith
+-- Loading package components
+-- Compiling entity vmuxregsre
+-- Compiling architecture Structure of vmuxregsre
+-- Compiling entity vcc
+-- Compiling architecture Structure of vcc
+-- Compiling entity inverter
+-- Compiling architecture Structure of inverter
+-- Compiling entity vmuxregsre0001
+-- Compiling architecture Structure of vmuxregsre0001
+-- Compiling entity ccu2B0
+-- Compiling architecture Structure of ccu2B0
+-- Compiling entity gnd
+-- Compiling architecture Structure of gnd
+-- Compiling entity prng_inst_SLICE_0
+-- Compiling architecture Structure of prng_inst_SLICE_0
+-- Compiling entity prng_inst_SLICE_1
+-- Compiling architecture Structure of prng_inst_SLICE_1
+-- Compiling entity prng_inst_SLICE_2
+-- Compiling architecture Structure of prng_inst_SLICE_2
+-- Compiling entity ccu20002
+-- Compiling architecture Structure of ccu20002
+-- Compiling entity prng_inst_SLICE_3
+-- Compiling architecture Structure of prng_inst_SLICE_3
+-- Compiling entity ccu20003
+-- Compiling architecture Structure of ccu20003
+-- Compiling entity prng_inst_SLICE_4
+-- Compiling architecture Structure of prng_inst_SLICE_4
+-- Compiling entity lut4
+-- Compiling architecture Structure of lut4
+-- Compiling entity vmuxregsre0004
+-- Compiling architecture Structure of vmuxregsre0004
+-- Compiling entity ft601_comp_SLICE_9
+-- Compiling architecture Structure of ft601_comp_SLICE_9
+-- Compiling entity lut40005
+-- Compiling architecture Structure of lut40005
+-- Compiling entity ft601_comp_SLICE_10
+-- Compiling architecture Structure of ft601_comp_SLICE_10
+-- Compiling entity lut40006
+-- Compiling architecture Structure of lut40006
+-- Compiling entity lut40007
+-- Compiling architecture Structure of lut40007
+-- Compiling entity SLICE_11
+-- Compiling architecture Structure of SLICE_11
+-- Compiling entity lut40008
+-- Compiling architecture Structure of lut40008
+-- Compiling entity lut40009
+-- Compiling architecture Structure of lut40009
+-- Compiling entity decoder_inst_SLICE_17
+-- Compiling architecture Structure of decoder_inst_SLICE_17
+-- Compiling entity lut40010
+-- Compiling architecture Structure of lut40010
+-- Compiling entity lut40011
+-- Compiling architecture Structure of lut40011
+-- Compiling entity decoder_inst_SLICE_18
+-- Compiling architecture Structure of decoder_inst_SLICE_18
+-- Compiling entity lut40012
+-- Compiling architecture Structure of lut40012
+-- Compiling entity lut40013
+-- Compiling architecture Structure of lut40013
+-- Compiling entity decoder_inst_SLICE_19
+-- Compiling architecture Structure of decoder_inst_SLICE_19
+-- Compiling entity lut40014
+-- Compiling architecture Structure of lut40014
+-- Compiling entity lut40015
+-- Compiling architecture Structure of lut40015
+-- Compiling entity decoder_inst_SLICE_20
+-- Compiling architecture Structure of decoder_inst_SLICE_20
+-- Compiling entity lut40016
+-- Compiling architecture Structure of lut40016
+-- Compiling entity decoder_inst_SLICE_21
+-- Compiling architecture Structure of decoder_inst_SLICE_21
+-- Compiling entity lut40017
+-- Compiling architecture Structure of lut40017
+-- Compiling entity lut40018
+-- Compiling architecture Structure of lut40018
+-- Compiling entity selmux2
+-- Compiling architecture Structure of selmux2
+-- Compiling entity decoder_inst_SLICE_22
+-- Compiling architecture Structure of decoder_inst_SLICE_22
+-- Compiling entity lut40019
+-- Compiling architecture Structure of lut40019
+-- Compiling entity lut40020
+-- Compiling architecture Structure of lut40020
+-- Compiling entity decoder_inst_SLICE_23
+-- Compiling architecture Structure of decoder_inst_SLICE_23
+-- Compiling entity lut40021
+-- Compiling architecture Structure of lut40021
+-- Compiling entity lut40022
+-- Compiling architecture Structure of lut40022
+-- Compiling entity decoder_inst_SLICE_24
+-- Compiling architecture Structure of decoder_inst_SLICE_24
+-- Compiling entity lut40023
+-- Compiling architecture Structure of lut40023
+-- Compiling entity lut40024
+-- Compiling architecture Structure of lut40024
+-- Compiling entity decoder_inst_SLICE_25
+-- Compiling architecture Structure of decoder_inst_SLICE_25
+-- Compiling entity lut40025
+-- Compiling architecture Structure of lut40025
+-- Compiling entity lut40026
+-- Compiling architecture Structure of lut40026
+-- Compiling entity deser_inst_SLICE_26
+-- Compiling architecture Structure of deser_inst_SLICE_26
+-- Compiling entity lut40027
+-- Compiling architecture Structure of lut40027
+-- Compiling entity lut40028
+-- Compiling architecture Structure of lut40028
+-- Compiling entity deser_inst_SLICE_28
+-- Compiling architecture Structure of deser_inst_SLICE_28
+-- Compiling entity lut40029
+-- Compiling architecture Structure of lut40029
+-- Compiling entity lut40030
+-- Compiling architecture Structure of lut40030
+-- Compiling entity deser_inst_SLICE_29
+-- Compiling architecture Structure of deser_inst_SLICE_29
+-- Compiling entity lut40031
+-- Compiling architecture Structure of lut40031
+-- Compiling entity lut40032
+-- Compiling architecture Structure of lut40032
+-- Compiling entity deser_inst_SLICE_30
+-- Compiling architecture Structure of deser_inst_SLICE_30
+-- Compiling entity lut40033
+-- Compiling architecture Structure of lut40033
+-- Compiling entity lut40034
+-- Compiling architecture Structure of lut40034
+-- Compiling entity deser_inst_SLICE_31
+-- Compiling architecture Structure of deser_inst_SLICE_31
+-- Compiling entity lut40035
+-- Compiling architecture Structure of lut40035
+-- Compiling entity lut40036
+-- Compiling architecture Structure of lut40036
+-- Compiling entity deser_inst_SLICE_32
+-- Compiling architecture Structure of deser_inst_SLICE_32
+-- Compiling entity lut40037
+-- Compiling architecture Structure of lut40037
+-- Compiling entity lut40038
+-- Compiling architecture Structure of lut40038
+-- Compiling entity deser_inst_SLICE_35
+-- Compiling architecture Structure of deser_inst_SLICE_35
+-- Compiling entity lut40039
+-- Compiling architecture Structure of lut40039
+-- Compiling entity lut40040
+-- Compiling architecture Structure of lut40040
+-- Compiling entity SLICE_38
+-- Compiling architecture Structure of SLICE_38
+-- Compiling entity lut40041
+-- Compiling architecture Structure of lut40041
+-- Compiling entity lut40042
+-- Compiling architecture Structure of lut40042
+-- Compiling entity SLICE_39
+-- Compiling architecture Structure of SLICE_39
+-- Compiling entity lut40043
+-- Compiling architecture Structure of lut40043
+-- Compiling entity SLICE_40
+-- Compiling architecture Structure of SLICE_40
+-- Compiling entity lut40044
+-- Compiling architecture Structure of lut40044
+-- Compiling entity lut40045
+-- Compiling architecture Structure of lut40045
+-- Compiling entity deser_inst_SLICE_41
+-- Compiling architecture Structure of deser_inst_SLICE_41
+-- Compiling entity lut40046
+-- Compiling architecture Structure of lut40046
+-- Compiling entity lut40047
+-- Compiling architecture Structure of lut40047
+-- Compiling entity deser_inst_SLICE_42
+-- Compiling architecture Structure of deser_inst_SLICE_42
+-- Compiling entity lut40048
+-- Compiling architecture Structure of lut40048
+-- Compiling entity lut40049
+-- Compiling architecture Structure of lut40049
+-- Compiling entity ft601_comp_SLICE_43
+-- Compiling architecture Structure of ft601_comp_SLICE_43
+-- Compiling entity SLICE_44
+-- Compiling architecture Structure of SLICE_44
+-- Compiling entity lut40050
+-- Compiling architecture Structure of lut40050
+-- Compiling entity lut40051
+-- Compiling architecture Structure of lut40051
+-- Compiling entity ft601_comp_SLICE_45
+-- Compiling architecture Structure of ft601_comp_SLICE_45
+-- Compiling entity lut40052
+-- Compiling architecture Structure of lut40052
+-- Compiling entity SLICE_46
+-- Compiling architecture Structure of SLICE_46
+-- Compiling entity lut40053
+-- Compiling architecture Structure of lut40053
+-- Compiling entity lut40054
+-- Compiling architecture Structure of lut40054
+-- Compiling entity ft601_comp_SLICE_47
+-- Compiling architecture Structure of ft601_comp_SLICE_47
+-- Compiling entity lut40055
+-- Compiling architecture Structure of lut40055
+-- Compiling entity lut40056
+-- Compiling architecture Structure of lut40056
+-- Compiling entity ft601_comp_SLICE_48
+-- Compiling architecture Structure of ft601_comp_SLICE_48
+-- Compiling entity lut40057
+-- Compiling architecture Structure of lut40057
+-- Compiling entity lut40058
+-- Compiling architecture Structure of lut40058
+-- Compiling entity ft601_comp_SLICE_49
+-- Compiling architecture Structure of ft601_comp_SLICE_49
+-- Compiling entity lut40059
+-- Compiling architecture Structure of lut40059
+-- Compiling entity lut40060
+-- Compiling architecture Structure of lut40060
+-- Compiling entity ft601_comp_SLICE_50
+-- Compiling architecture Structure of ft601_comp_SLICE_50
+-- Compiling entity lut40061
+-- Compiling architecture Structure of lut40061
+-- Compiling entity lut40062
+-- Compiling architecture Structure of lut40062
+-- Compiling entity ft601_comp_SLICE_51
+-- Compiling architecture Structure of ft601_comp_SLICE_51
+-- Compiling entity lut40063
+-- Compiling architecture Structure of lut40063
+-- Compiling entity lut40064
+-- Compiling architecture Structure of lut40064
+-- Compiling entity ft601_comp_SLICE_52
+-- Compiling architecture Structure of ft601_comp_SLICE_52
+-- Compiling entity lut40065
+-- Compiling architecture Structure of lut40065
+-- Compiling entity lut40066
+-- Compiling architecture Structure of lut40066
+-- Compiling entity ft601_comp_SLICE_53
+-- Compiling architecture Structure of ft601_comp_SLICE_53
+-- Compiling entity lut40067
+-- Compiling architecture Structure of lut40067
+-- Compiling entity lut40068
+-- Compiling architecture Structure of lut40068
+-- Compiling entity ft601_comp_SLICE_54
+-- Compiling architecture Structure of ft601_comp_SLICE_54
+-- Compiling entity lut40069
+-- Compiling architecture Structure of lut40069
+-- Compiling entity lut40070
+-- Compiling architecture Structure of lut40070
+-- Compiling entity ft601_comp_SLICE_55
+-- Compiling architecture Structure of ft601_comp_SLICE_55
+-- Compiling entity lut40071
+-- Compiling architecture Structure of lut40071
+-- Compiling entity lut40072
+-- Compiling architecture Structure of lut40072
+-- Compiling entity ft601_comp_SLICE_56
+-- Compiling architecture Structure of ft601_comp_SLICE_56
+-- Compiling entity lut40073
+-- Compiling architecture Structure of lut40073
+-- Compiling entity lut40074
+-- Compiling architecture Structure of lut40074
+-- Compiling entity ft601_comp_SLICE_57
+-- Compiling architecture Structure of ft601_comp_SLICE_57
+-- Compiling entity lut40075
+-- Compiling architecture Structure of lut40075
+-- Compiling entity lut40076
+-- Compiling architecture Structure of lut40076
+-- Compiling entity ft601_comp_SLICE_58
+-- Compiling architecture Structure of ft601_comp_SLICE_58
+-- Compiling entity lut40077
+-- Compiling architecture Structure of lut40077
+-- Compiling entity lut40078
+-- Compiling architecture Structure of lut40078
+-- Compiling entity ft601_comp_SLICE_59
+-- Compiling architecture Structure of ft601_comp_SLICE_59
+-- Compiling entity lut40079
+-- Compiling architecture Structure of lut40079
+-- Compiling entity lut40080
+-- Compiling architecture Structure of lut40080
+-- Compiling entity deser_inst_SLICE_60
+-- Compiling architecture Structure of deser_inst_SLICE_60
+-- Compiling entity lut40081
+-- Compiling architecture Structure of lut40081
+-- Compiling entity lut40082
+-- Compiling architecture Structure of lut40082
+-- Compiling entity ft601_comp_i2426_SLICE_61
+-- Compiling architecture Structure of ft601_comp_i2426_SLICE_61
+-- Compiling entity lut40083
+-- Compiling architecture Structure of lut40083
+-- Compiling entity lut40084
+-- Compiling architecture Structure of lut40084
+-- Compiling entity ft601_comp_i2424_SLICE_62
+-- Compiling architecture Structure of ft601_comp_i2424_SLICE_62
+-- Compiling entity lut40085
+-- Compiling architecture Structure of lut40085
+-- Compiling entity lut40086
+-- Compiling architecture Structure of lut40086
+-- Compiling entity decoder_inst_SLICE_63
+-- Compiling architecture Structure of decoder_inst_SLICE_63
+-- Compiling entity lut40087
+-- Compiling architecture Structure of lut40087
+-- Compiling entity lut40088
+-- Compiling architecture Structure of lut40088
+-- Compiling entity decoder_inst_SLICE_64
+-- Compiling architecture Structure of decoder_inst_SLICE_64
+-- Compiling entity lut40089
+-- Compiling architecture Structure of lut40089
+-- Compiling entity lut40090
+-- Compiling architecture Structure of lut40090
+-- Compiling entity deser_inst_SLICE_65
+-- Compiling architecture Structure of deser_inst_SLICE_65
+-- Compiling entity lut40091
+-- Compiling architecture Structure of lut40091
+-- Compiling entity lut40092
+-- Compiling architecture Structure of lut40092
+-- Compiling entity SLICE_66
+-- Compiling architecture Structure of SLICE_66
+-- Compiling entity lut40093
+-- Compiling architecture Structure of lut40093
+-- Compiling entity lut40094
+-- Compiling architecture Structure of lut40094
+-- Compiling entity SLICE_67
+-- Compiling architecture Structure of SLICE_67
+-- Compiling entity lut40095
+-- Compiling architecture Structure of lut40095
+-- Compiling entity lut40096
+-- Compiling architecture Structure of lut40096
+-- Compiling entity SLICE_68
+-- Compiling architecture Structure of SLICE_68
+-- Compiling entity lut40097
+-- Compiling architecture Structure of lut40097
+-- Compiling entity lut40098
+-- Compiling architecture Structure of lut40098
+-- Compiling entity SLICE_69
+-- Compiling architecture Structure of SLICE_69
+-- Compiling entity lut40099
+-- Compiling architecture Structure of lut40099
+-- Compiling entity lut40100
+-- Compiling architecture Structure of lut40100
+-- Compiling entity SLICE_70
+-- Compiling architecture Structure of SLICE_70
+-- Compiling entity lut40101
+-- Compiling architecture Structure of lut40101
+-- Compiling entity lut40102
+-- Compiling architecture Structure of lut40102
+-- Compiling entity SLICE_71
+-- Compiling architecture Structure of SLICE_71
+-- Compiling entity lut40103
+-- Compiling architecture Structure of lut40103
+-- Compiling entity lut40104
+-- Compiling architecture Structure of lut40104
+-- Compiling entity SLICE_72
+-- Compiling architecture Structure of SLICE_72
+-- Compiling entity lut40105
+-- Compiling architecture Structure of lut40105
+-- Compiling entity lut40106
+-- Compiling architecture Structure of lut40106
+-- Compiling entity decoder_inst_SLICE_73
+-- Compiling architecture Structure of decoder_inst_SLICE_73
+-- Compiling entity lut40107
+-- Compiling architecture Structure of lut40107
+-- Compiling entity lut40108
+-- Compiling architecture Structure of lut40108
+-- Compiling entity decoder_inst_SLICE_74
+-- Compiling architecture Structure of decoder_inst_SLICE_74
+-- Compiling entity lut40109
+-- Compiling architecture Structure of lut40109
+-- Compiling entity decoder_inst_SLICE_75
+-- Compiling architecture Structure of decoder_inst_SLICE_75
+-- Compiling entity lut40110
+-- Compiling architecture Structure of lut40110
+-- Compiling entity lut40111
+-- Compiling architecture Structure of lut40111
+-- Compiling entity decoder_inst_SLICE_76
+-- Compiling architecture Structure of decoder_inst_SLICE_76
+-- Compiling entity lut40112
+-- Compiling architecture Structure of lut40112
+-- Compiling entity lut40113
+-- Compiling architecture Structure of lut40113
+-- Compiling entity decoder_inst_SLICE_77
+-- Compiling architecture Structure of decoder_inst_SLICE_77
+-- Compiling entity lut40114
+-- Compiling architecture Structure of lut40114
+-- Compiling entity lut40115
+-- Compiling architecture Structure of lut40115
+-- Compiling entity decoder_inst_SLICE_78
+-- Compiling architecture Structure of decoder_inst_SLICE_78
+-- Compiling entity lut40116
+-- Compiling architecture Structure of lut40116
+-- Compiling entity lut40117
+-- Compiling architecture Structure of lut40117
+-- Compiling entity deser_inst_SLICE_79
+-- Compiling architecture Structure of deser_inst_SLICE_79
+-- Compiling entity lut40118
+-- Compiling architecture Structure of lut40118
+-- Compiling entity lut40119
+-- Compiling architecture Structure of lut40119
+-- Compiling entity decoder_inst_SLICE_80
+-- Compiling architecture Structure of decoder_inst_SLICE_80
+-- Compiling entity lut40120
+-- Compiling architecture Structure of lut40120
+-- Compiling entity lut40121
+-- Compiling architecture Structure of lut40121
+-- Compiling entity SLICE_81
+-- Compiling architecture Structure of SLICE_81
+-- Compiling entity lut40122
+-- Compiling architecture Structure of lut40122
+-- Compiling entity lut40123
+-- Compiling architecture Structure of lut40123
+-- Compiling entity SLICE_82
+-- Compiling architecture Structure of SLICE_82
+-- Compiling entity lut40124
+-- Compiling architecture Structure of lut40124
+-- Compiling entity decoder_inst_SLICE_83
+-- Compiling architecture Structure of decoder_inst_SLICE_83
+-- Compiling entity lut40125
+-- Compiling architecture Structure of lut40125
+-- Compiling entity lut40126
+-- Compiling architecture Structure of lut40126
+-- Compiling entity decoder_inst_SLICE_84
+-- Compiling architecture Structure of decoder_inst_SLICE_84
+-- Compiling entity lut40127
+-- Compiling architecture Structure of lut40127
+-- Compiling entity lut40128
+-- Compiling architecture Structure of lut40128
+-- Compiling entity deser_inst_SLICE_85
+-- Compiling architecture Structure of deser_inst_SLICE_85
+-- Compiling entity lut40129
+-- Compiling architecture Structure of lut40129
+-- Compiling entity lut40130
+-- Compiling architecture Structure of lut40130
+-- Compiling entity deser_inst_SLICE_86
+-- Compiling architecture Structure of deser_inst_SLICE_86
+-- Compiling entity lut40131
+-- Compiling architecture Structure of lut40131
+-- Compiling entity decoder_inst_SLICE_87
+-- Compiling architecture Structure of decoder_inst_SLICE_87
+-- Compiling entity lut40132
+-- Compiling architecture Structure of lut40132
+-- Compiling entity deser_inst_SLICE_88
+-- Compiling architecture Structure of deser_inst_SLICE_88
+-- Compiling entity xo2iobuf
+-- Compiling architecture Structure of xo2iobuf
+-- Compiling entity FT601_DATA_10_B
+-- Compiling architecture Structure of FT601_DATA_10_B
+-- Compiling entity FT601_DATA_11_B
+-- Compiling architecture Structure of FT601_DATA_11_B
+-- Compiling entity FT601_DATA_12_B
+-- Compiling architecture Structure of FT601_DATA_12_B
+-- Compiling entity FT601_DATA_13_B
+-- Compiling architecture Structure of FT601_DATA_13_B
+-- Compiling entity FT601_DATA_14_B
+-- Compiling architecture Structure of FT601_DATA_14_B
+-- Compiling entity FT601_DATA_15_B
+-- Compiling architecture Structure of FT601_DATA_15_B
+-- Compiling entity FT601_DATA_16_B
+-- Compiling architecture Structure of FT601_DATA_16_B
+-- Compiling entity FT601_DATA_17_B
+-- Compiling architecture Structure of FT601_DATA_17_B
+-- Compiling entity FT601_DATA_18_B
+-- Compiling architecture Structure of FT601_DATA_18_B
+-- Compiling entity xo2iobuf0133
+-- Compiling architecture Structure of xo2iobuf0133
+-- Compiling entity FT601_TXE_NB
+-- Compiling architecture Structure of FT601_TXE_NB
+-- Compiling entity FT601_RXF_NB
+-- Compiling architecture Structure of FT601_RXF_NB
+-- Compiling entity FT601_CLKB
+-- Compiling architecture Structure of FT601_CLKB
+-- Compiling entity FT601_OE_NB
+-- Compiling architecture Structure of FT601_OE_NB
+-- Compiling entity FT601_RD_NB
+-- Compiling architecture Structure of FT601_RD_NB
+-- Compiling entity FT601_SIWU_NB
+-- Compiling architecture Structure of FT601_SIWU_NB
+-- Compiling entity FT601_WR_NB
+-- Compiling architecture Structure of FT601_WR_NB
+-- Compiling entity xo2iobuf0134
+-- Compiling architecture Structure of xo2iobuf0134
+-- Compiling entity FT601_BE_0_B
+-- Compiling architecture Structure of FT601_BE_0_B
+-- Compiling entity FT601_BE_1_B
+-- Compiling architecture Structure of FT601_BE_1_B
+-- Compiling entity FT601_BE_2_B
+-- Compiling architecture Structure of FT601_BE_2_B
+-- Compiling entity FT601_BE_3_B
+-- Compiling architecture Structure of FT601_BE_3_B
+-- Compiling entity FT601_DATA_0_B
+-- Compiling architecture Structure of FT601_DATA_0_B
+-- Compiling entity FT601_DATA_1_B
+-- Compiling architecture Structure of FT601_DATA_1_B
+-- Compiling entity FT601_DATA_2_B
+-- Compiling architecture Structure of FT601_DATA_2_B
+-- Compiling entity FT601_DATA_3_B
+-- Compiling architecture Structure of FT601_DATA_3_B
+-- Compiling entity FT601_DATA_4_B
+-- Compiling architecture Structure of FT601_DATA_4_B
+-- Compiling entity FT601_DATA_5_B
+-- Compiling architecture Structure of FT601_DATA_5_B
+-- Compiling entity FT601_DATA_19_B
+-- Compiling architecture Structure of FT601_DATA_19_B
+-- Compiling entity FT601_DATA_20_B
+-- Compiling architecture Structure of FT601_DATA_20_B
+-- Compiling entity FT601_DATA_21_B
+-- Compiling architecture Structure of FT601_DATA_21_B
+-- Compiling entity FT601_DATA_22_B
+-- Compiling architecture Structure of FT601_DATA_22_B
+-- Compiling entity FT601_DATA_23_B
+-- Compiling architecture Structure of FT601_DATA_23_B
+-- Compiling entity FT601_DATA_24_B
+-- Compiling architecture Structure of FT601_DATA_24_B
+-- Compiling entity FT601_DATA_25_B
+-- Compiling architecture Structure of FT601_DATA_25_B
+-- Compiling entity FT601_DATA_26_B
+-- Compiling architecture Structure of FT601_DATA_26_B
+-- Compiling entity FT601_DATA_27_B
+-- Compiling architecture Structure of FT601_DATA_27_B
+-- Compiling entity FT601_DATA_28_B
+-- Compiling architecture Structure of FT601_DATA_28_B
+-- Compiling entity FT601_DATA_29_B
+-- Compiling architecture Structure of FT601_DATA_29_B
+-- Compiling entity FT601_DATA_30_B
+-- Compiling architecture Structure of FT601_DATA_30_B
+-- Compiling entity FT601_DATA_31_B
+-- Compiling architecture Structure of FT601_DATA_31_B
+-- Compiling entity FT601_RST_NB
+-- Compiling architecture Structure of FT601_RST_NB
+-- Compiling entity FT601_DATA_9_B
+-- Compiling architecture Structure of FT601_DATA_9_B
+-- Compiling entity LEDB
+-- Compiling architecture Structure of LEDB
+-- Compiling entity xo2iobuf0135
+-- Compiling architecture Structure of xo2iobuf0135
+-- Compiling entity CLK_LANEB
+-- Compiling architecture Structure of CLK_LANEB
+-- Compiling entity DATA_LANE_0_B
+-- Compiling architecture Structure of DATA_LANE_0_B
+-- Compiling entity xo2delay
+-- Compiling architecture Structure of xo2delay
+-- Compiling entity xo2iddr
+-- Compiling architecture Structure of xo2iddr
+-- Compiling entity DATA_LANE_0_MGIOL
+-- Compiling architecture Structure of DATA_LANE_0_MGIOL
+-- Compiling entity FT601_DATA_6_B
+-- Compiling architecture Structure of FT601_DATA_6_B
+-- Compiling entity FT601_DATA_7_B
+-- Compiling architecture Structure of FT601_DATA_7_B
+-- Compiling entity FT601_DATA_8_B
+-- Compiling architecture Structure of FT601_DATA_8_B
+-- Compiling entity FIFO8KBB
+-- Compiling architecture Structure of FIFO8KBB
+-- Compiling entity cdc_fifo_inst_async_fifo_0_1
+-- Compiling architecture Structure of cdc_fifo_inst_async_fifo_0_1
+-- Compiling entity DLLDELCB
+-- Compiling architecture Structure of DLLDELCB
+-- Compiling entity deser_inst_ddrx1_inst_Inst4_DLLDELC
+-- Compiling architecture Structure of deser_inst_ddrx1_inst_Inst4_DLLDELC
+-- Compiling entity DQSDLLCB
+-- Compiling architecture Structure of DQSDLLCB
+-- Compiling entity deser_inst_ddrx1_inst_Inst3_DQSDLLC
+-- Compiling architecture Structure of deser_inst_ddrx1_inst_Inst3_DQSDLLC
+-- Compiling entity top
+-- Compiling architecture Structure of top
+-- Compiling configuration Structure_CON
+-- Loading entity top
+-- Loading architecture Structure of top
+-- Loading entity prng_inst_SLICE_0
+-- Loading entity prng_inst_SLICE_1
+-- Loading entity prng_inst_SLICE_2
+-- Loading entity prng_inst_SLICE_3
+-- Loading entity prng_inst_SLICE_4
+-- Loading entity ft601_comp_SLICE_9
+-- Loading entity ft601_comp_SLICE_10
+-- Loading entity SLICE_11
+-- Loading entity decoder_inst_SLICE_17
+-- Loading entity decoder_inst_SLICE_18
+-- Loading entity decoder_inst_SLICE_19
+-- Loading entity decoder_inst_SLICE_20
+-- Loading entity decoder_inst_SLICE_21
+-- Loading entity decoder_inst_SLICE_22
+-- Loading entity decoder_inst_SLICE_23
+-- Loading entity decoder_inst_SLICE_24
+-- Loading entity decoder_inst_SLICE_25
+-- Loading entity deser_inst_SLICE_26
+-- Loading entity deser_inst_SLICE_28
+-- Loading entity deser_inst_SLICE_29
+-- Loading entity deser_inst_SLICE_30
+-- Loading entity deser_inst_SLICE_31
+-- Loading entity deser_inst_SLICE_32
+-- Loading entity deser_inst_SLICE_35
+-- Loading entity SLICE_38
+-- Loading entity SLICE_39
+-- Loading entity SLICE_40
+-- Loading entity deser_inst_SLICE_41
+-- Loading entity deser_inst_SLICE_42
+-- Loading entity ft601_comp_SLICE_43
+-- Loading entity SLICE_44
+-- Loading entity ft601_comp_SLICE_45
+-- Loading entity SLICE_46
+-- Loading entity ft601_comp_SLICE_47
+-- Loading entity ft601_comp_SLICE_48
+-- Loading entity ft601_comp_SLICE_49
+-- Loading entity ft601_comp_SLICE_50
+-- Loading entity ft601_comp_SLICE_51
+-- Loading entity ft601_comp_SLICE_52
+-- Loading entity ft601_comp_SLICE_53
+-- Loading entity ft601_comp_SLICE_54
+-- Loading entity ft601_comp_SLICE_55
+-- Loading entity ft601_comp_SLICE_56
+-- Loading entity ft601_comp_SLICE_57
+-- Loading entity ft601_comp_SLICE_58
+-- Loading entity ft601_comp_SLICE_59
+-- Loading entity deser_inst_SLICE_60
+-- Loading entity ft601_comp_i2426_SLICE_61
+-- Loading entity ft601_comp_i2424_SLICE_62
+-- Loading entity decoder_inst_SLICE_63
+-- Loading entity decoder_inst_SLICE_64
+-- Loading entity deser_inst_SLICE_65
+-- Loading entity SLICE_66
+-- Loading entity SLICE_67
+-- Loading entity SLICE_68
+-- Loading entity SLICE_69
+-- Loading entity SLICE_70
+-- Loading entity SLICE_71
+-- Loading entity SLICE_72
+-- Loading entity decoder_inst_SLICE_73
+-- Loading entity decoder_inst_SLICE_74
+-- Loading entity decoder_inst_SLICE_75
+-- Loading entity decoder_inst_SLICE_76
+-- Loading entity decoder_inst_SLICE_77
+-- Loading entity decoder_inst_SLICE_78
+-- Loading entity deser_inst_SLICE_79
+-- Loading entity decoder_inst_SLICE_80
+-- Loading entity SLICE_81
+-- Loading entity SLICE_82
+-- Loading entity decoder_inst_SLICE_83
+-- Loading entity decoder_inst_SLICE_84
+-- Loading entity deser_inst_SLICE_85
+-- Loading entity deser_inst_SLICE_86
+-- Loading entity decoder_inst_SLICE_87
+-- Loading entity deser_inst_SLICE_88
+-- Loading entity FT601_DATA_10_B
+-- Loading entity FT601_DATA_11_B
+-- Loading entity FT601_DATA_12_B
+-- Loading entity FT601_DATA_13_B
+-- Loading entity FT601_DATA_14_B
+-- Loading entity FT601_DATA_15_B
+-- Loading entity FT601_DATA_16_B
+-- Loading entity FT601_DATA_17_B
+-- Loading entity FT601_DATA_18_B
+-- Loading entity FT601_TXE_NB
+-- Loading entity FT601_RXF_NB
+-- Loading entity FT601_CLKB
+-- Loading entity FT601_OE_NB
+-- Loading entity FT601_RD_NB
+-- Loading entity FT601_SIWU_NB
+-- Loading entity FT601_WR_NB
+-- Loading entity FT601_BE_0_B
+-- Loading entity FT601_BE_1_B
+-- Loading entity FT601_BE_2_B
+-- Loading entity FT601_BE_3_B
+-- Loading entity FT601_DATA_0_B
+-- Loading entity FT601_DATA_1_B
+-- Loading entity FT601_DATA_2_B
+-- Loading entity FT601_DATA_3_B
+-- Loading entity FT601_DATA_4_B
+-- Loading entity FT601_DATA_5_B
+-- Loading entity FT601_DATA_19_B
+-- Loading entity FT601_DATA_20_B
+-- Loading entity FT601_DATA_21_B
+-- Loading entity FT601_DATA_22_B
+-- Loading entity FT601_DATA_23_B
+-- Loading entity FT601_DATA_24_B
+-- Loading entity FT601_DATA_25_B
+-- Loading entity FT601_DATA_26_B
+-- Loading entity FT601_DATA_27_B
+-- Loading entity FT601_DATA_28_B
+-- Loading entity FT601_DATA_29_B
+-- Loading entity FT601_DATA_30_B
+-- Loading entity FT601_DATA_31_B
+-- Loading entity FT601_RST_NB
+-- Loading entity FT601_DATA_9_B
+-- Loading entity LEDB
+-- Loading entity CLK_LANEB
+-- Loading entity DATA_LANE_0_B
+-- Loading entity DATA_LANE_0_MGIOL
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package VITAL_Timing
+-- Loading package VITAL_Primitives
+-- Loading entity delayd
+-- Loading entity vlo
+-- Loading entity vhi
+-- Loading entity FT601_DATA_6_B
+-- Loading entity FT601_DATA_7_B
+-- Loading entity FT601_DATA_8_B
+-- Loading entity cdc_fifo_inst_async_fifo_0_1
+-- Loading entity deser_inst_ddrx1_inst_Inst4_DLLDELC
+-- Loading entity deser_inst_ddrx1_inst_Inst3_DQSDLLC
+-- Loading package global
+-- Loading entity pur
+-- Loading entity gsr
+
+} {} {}} /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_send.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_send.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity prng_send
+-- Compiling architecture rtl of prng_send
+
+} {} {}} /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top_tb.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity top_tb
+-- Compiling architecture behavior of top_tb
+
+} {} {}}

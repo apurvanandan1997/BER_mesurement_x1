@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/ise_proj/ise_proj/top.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'top'
+ERROR: [VRFC 10-2987] 'prng_send' is not compiled in library 'work' [/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/ise_proj/ise_proj/top.vhd:327]
+ERROR: [VRFC 10-2987] 'enc_8b10b' is not compiled in library 'work' [/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/ise_proj/ise_proj/top.vhd:344]
+ERROR: [VRFC 10-3782] unit 'rtl' ignored due to previous errors [/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/ise_proj/ise_proj/top.vhd:44]
+INFO: [VRFC 10-3070] VHDL file '/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/ise_proj/ise_proj/top.vhd' ignored due to errors

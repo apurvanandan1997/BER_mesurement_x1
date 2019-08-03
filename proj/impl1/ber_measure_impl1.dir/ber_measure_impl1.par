@@ -1,0 +1,26 @@
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Aug  2 06:07:31 2019
+
+/usr/local/diamond/3.10_x64/ispfpga/bin/lin64/par -f ber_measure_impl1.p2t
+ber_measure_impl1_map.ncd ber_measure_impl1.dir ber_measure_impl1.prf -gui
+-msgset
+/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/promote.xml
+
+
+Preference file: ber_measure_impl1.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -3.778       103909       -0.991       4214         06           Success
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 6 secs 
+
+par done!

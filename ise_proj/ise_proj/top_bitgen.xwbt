@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/ise_proj/ise_proj/top.ncd
+OUTFILE=/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/ise_proj/ise_proj/top.bit
+FAMILY=Virtex5
+PART=xc5vlx110t-1ff1136
+WORKINGDIR=/home/apurvan/GSoC/usb-plug-mod-working/Transceiver_tb_enc_working_bkp/Transceiver_tb/ise_proj/ise_proj
+LICENSE=ISE
+USER_INFO=__0_0_0

@@ -1,0 +1,151 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn190731234931"></A><B><U><big>pn190731234931</big></U></B>
+#Start recording tcl command: 7/31/2019 23:34:57
+#Project Location: /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj; Project name: ber_measure
+prj_project new -name "ber_measure" -impl "impl1" -dev LCMXO2-2000HC-6TG100C -synthesis "lse"
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/async_fifo.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/calc_ber.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/deserializer.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ft601.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_recv.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top_tb.vhd"
+prj_project save
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/top_tb.vhd" SimulateOnly
+prj_src exclude "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd"
+prj_src remove "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd"
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/ddrx1.vhd"
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/beh_sim/beh_sim.spf"
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_send.vhd" "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/enc_8b10b.vhd"
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/prng_send.vhd" SimulateOnly
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/enc_8b10b.vhd" SimulateOnly
+prj_project save
+prj_project close
+#Stop recording: 7/31/2019 23:49:31
+
+
+
+<A name="pn190731235509"></A><B><U><big>pn190731235509</big></U></B>
+#Start recording tcl command: 7/31/2019 23:49:36
+#Project Location: /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj; Project name: ber_measure
+prj_project open "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/ber_measure.ldf"
+prj_project close
+#Stop recording: 7/31/2019 23:55:09
+
+
+
+<A name="pn190802062708"></A><B><U><big>pn190802062708</big></U></B>
+#Start recording tcl command: 8/1/2019 11:50:20
+#Project Location: /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj; Project name: ber_measure
+prj_project open "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/ber_measure.ldf"
+prj_run Export -impl impl1 -task Bitgen
+prj_src add "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/par_sim/par_sim.spf"
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd" SimulateOnly
+prj_src syn_sim -src "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd" SynthesisAndSimulate
+prj_src enable "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/src/dec_8b10b.vhd"
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+launch_synplify_prj impl1
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_project save
+prj_project close
+#Stop recording: 8/2/2019 06:27:08
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

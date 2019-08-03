@@ -1,0 +1,5 @@
+#Start recording tcl command: 7/31/2019 23:49:36
+#Project Location: /home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj; Project name: ber_measure
+prj_project open "/home/apurvan/GSoC/usb-plug-mod-working/BER_mesurement_x1/proj/ber_measure.ldf"
+prj_project close
+#Stop recording: 7/31/2019 23:55:09

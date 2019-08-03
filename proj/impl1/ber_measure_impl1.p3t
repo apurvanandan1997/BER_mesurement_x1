@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "ber_measure_impl1.log"
+-o "ber_measure_impl1.csv"
+-pr "ber_measure_impl1.prf"
